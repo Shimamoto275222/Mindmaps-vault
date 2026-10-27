@@ -401,6 +401,10 @@ add to .zshrc + . ~/.zshrc ^bIxQYPU6
 
 flow control ^luVOkPBP
 
+Text processing ^6OqAxO0F
+
+Regex ^e9UtaYxs
+
 ## Element Links
 sWhJyI9I: [[ls]]
 
@@ -442,6 +446,8 @@ A9bYrQK2: [[export]]
 
 UcqMZcix: [[Permission_attributes]]
 
+gGRMAIAw: [[Regex]]
+
 luVOkPBP: [[Flow_control]]
 
 %%
@@ -455,8 +461,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "AZcNg1xx",
 			"type": "arrow",
-			"x": -3481.8759501128325,
-			"y": 2355.462807143998,
+			"x": -3473.095438112832,
+			"y": 2269.3386801439983,
 			"width": 671.2965262735634,
 			"height": 710.9408735804102,
 			"angle": 0,
@@ -474,11 +480,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 567906420,
-			"version": 365,
-			"versionNonce": 562310146,
+			"version": 525,
+			"versionNonce": 1146958880,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770707,
+			"updated": 1793113105073,
 			"created": 1792075766605,
 			"link": null,
 			"locked": false,
@@ -1095,8 +1101,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 301446963,
-			"version": 548,
-			"versionNonce": 1738625346,
+			"version": 550,
+			"versionNonce": 1439847904,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -1140,15 +1146,19 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				},
 				{
-					"id": "t9m1CJyc",
+					"id": "9w2mGQC6",
 					"type": "arrow"
 				},
 				{
-					"id": "9w2mGQC6",
+					"id": "1qaGwEhS",
+					"type": "arrow"
+				},
+				{
+					"id": "t9m1CJyc",
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945849868,
+			"updated": 1793113096906,
 			"created": 1790827495405,
 			"link": null,
 			"locked": false,
@@ -3021,8 +3031,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 864112202,
-			"version": 323,
-			"versionNonce": 1604081424,
+			"version": 324,
+			"versionNonce": 1604081425,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -3166,8 +3176,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 343590934,
-			"version": 372,
-			"versionNonce": 1515849104,
+			"version": 373,
+			"versionNonce": 1515849105,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -3311,8 +3321,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 1727541270,
-			"version": 416,
-			"versionNonce": 282608656,
+			"version": 417,
+			"versionNonce": 282608657,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -3456,8 +3466,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 1028108874,
-			"version": 329,
-			"versionNonce": 773919376,
+			"version": 330,
+			"versionNonce": 773919377,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -7842,7 +7852,7 @@ luVOkPBP: [[Flow_control]]
 			"id": "PpR3rN92Mn0jyqewTgCm-",
 			"type": "rectangle",
 			"x": 414.7523831727517,
-			"y": 1984.6847353789449,
+			"y": 1980.0100800350383,
 			"width": 178,
 			"height": 152,
 			"angle": 0,
@@ -7862,8 +7872,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 747700505,
-			"version": 1349,
-			"versionNonce": 1451739396,
+			"version": 1350,
+			"versionNonce": 1363007520,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -7883,7 +7893,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1791327429679,
+			"updated": 1793112889134,
 			"created": 1790952655004,
 			"link": null,
 			"locked": false,
@@ -7893,7 +7903,7 @@ luVOkPBP: [[Flow_control]]
 			"id": "1LGPu5dh",
 			"type": "text",
 			"x": 454.08041662001733,
-			"y": 2043.1847353789449,
+			"y": 2038.5100800350383,
 			"width": 99.34393310546875,
 			"height": 35,
 			"angle": 0,
@@ -7911,11 +7921,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b4d",
 			"roundness": null,
 			"seed": 1692628473,
-			"version": 1395,
-			"versionNonce": 1345325188,
+			"version": 1396,
+			"versionNonce": 2014172192,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1791327429679,
+			"updated": 1793112889134,
 			"created": 1790952655004,
 			"locked": false,
 			"text": "Pipeline",
@@ -7936,10 +7946,10 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "t2pX68fE",
 			"type": "arrow",
-			"x": 324.76438954919894,
-			"y": 1308.184775104853,
-			"width": 177.41815899707592,
-			"height": 670.4999602740918,
+			"x": 324.7753387489955,
+			"y": 1308.1847751048533,
+			"width": 177.39626059748286,
+			"height": 665.825304930185,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffec99",
@@ -7955,11 +7965,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 654179033,
-			"version": 213,
-			"versionNonce": 1566090971,
+			"version": 214,
+			"versionNonce": 998133792,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1791665124997,
+			"updated": 1793112889134,
 			"created": 1790952671733,
 			"link": null,
 			"locked": false,
@@ -7969,8 +7979,8 @@ luVOkPBP: [[Flow_control]]
 					0
 				],
 				[
-					177.41815899707592,
-					670.4999602740918
+					177.39626059748286,
+					665.825304930185
 				]
 			],
 			"startBinding": {
@@ -8050,9 +8060,9 @@ luVOkPBP: [[Flow_control]]
 			"id": "uiBgWGqm",
 			"type": "arrow",
 			"x": 598.7523831727517,
-			"y": 2060.4804862414894,
+			"y": 2056.021051256065,
 			"width": 118.82192800549262,
-			"height": 4.345894935268461,
+			"height": 0.08374527845262492,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffec99",
@@ -8068,11 +8078,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 883244953,
-			"version": 231,
-			"versionNonce": 1337054747,
+			"version": 232,
+			"versionNonce": 863980576,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1791665125002,
+			"updated": 1793112889134,
 			"created": 1790952718447,
 			"link": null,
 			"locked": false,
@@ -8083,7 +8093,7 @@ luVOkPBP: [[Flow_control]]
 				],
 				[
 					118.82192800549262,
-					-4.345894935268461
+					-0.08374527845262492
 				]
 			],
 			"startBinding": {
@@ -8312,9 +8322,9 @@ luVOkPBP: [[Flow_control]]
 			"id": "L0iXqAKj",
 			"type": "arrow",
 			"x": 598.7523831727517,
-			"y": 2067.2008386085054,
+			"y": 2062.6923323173046,
 			"width": 157.3118686601241,
-			"height": 170.44487250346356,
+			"height": 174.80107549635068,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffec99",
@@ -8330,11 +8340,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 2105391865,
-			"version": 68,
-			"versionNonce": 478384322,
+			"version": 69,
+			"versionNonce": 2046871584,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770689,
+			"updated": 1793112889134,
 			"created": 1790952821950,
 			"link": null,
 			"locked": false,
@@ -8345,7 +8355,7 @@ luVOkPBP: [[Flow_control]]
 				],
 				[
 					157.3118686601241,
-					170.44487250346356
+					174.80107549635068
 				]
 			],
 			"startBinding": {
@@ -9686,8 +9696,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 1011639959,
-			"version": 235,
-			"versionNonce": 2095306262,
+			"version": 236,
+			"versionNonce": 2095306263,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -10428,8 +10438,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 288252264,
-			"version": 358,
-			"versionNonce": 1726802517,
+			"version": 359,
+			"versionNonce": 1726802518,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -10749,8 +10759,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 246746500,
-			"version": 1267,
-			"versionNonce": 687738232,
+			"version": 1268,
+			"versionNonce": 687738233,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -11007,8 +11017,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 957432324,
-			"version": 1339,
-			"versionNonce": 1562288758,
+			"version": 1340,
+			"versionNonce": 1562288759,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -13347,8 +13357,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 1205307771,
-			"version": 1481,
-			"versionNonce": 1776606720,
+			"version": 1482,
+			"versionNonce": 1776606721,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -13609,8 +13619,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 690046267,
-			"version": 1541,
-			"versionNonce": 1116829094,
+			"version": 1542,
+			"versionNonce": 1116829095,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -13871,8 +13881,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 728357109,
-			"version": 1712,
-			"versionNonce": 381211872,
+			"version": 1713,
+			"versionNonce": 381211873,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -14133,8 +14143,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 1804495413,
-			"version": 1680,
-			"versionNonce": 1103509024,
+			"version": 1681,
+			"versionNonce": 1103509025,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -14395,8 +14405,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 1471941435,
-			"version": 1716,
-			"versionNonce": 1117937702,
+			"version": 1717,
+			"versionNonce": 1117937703,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -14657,8 +14667,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 308659285,
-			"version": 1737,
-			"versionNonce": 331158432,
+			"version": 1738,
+			"versionNonce": 331158433,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -16578,8 +16588,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 1406782523,
-			"version": 1066,
-			"versionNonce": 2116643668,
+			"version": 1067,
+			"versionNonce": 2116643669,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -16981,8 +16991,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 1677645551,
-			"version": 1260,
-			"versionNonce": 231063766,
+			"version": 1261,
+			"versionNonce": 231063767,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -17486,8 +17496,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "OVrER2pCfDV0SCDg7qvZ2",
 			"type": "rectangle",
-			"x": -2265.242475422492,
-			"y": 1682.3344386873252,
+			"x": -2256.461963422492,
+			"y": 1596.2103116873254,
 			"width": 178,
 			"height": 152,
 			"angle": 0,
@@ -17507,8 +17517,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 1735997377,
-			"version": 1433,
-			"versionNonce": 301015682,
+			"version": 1596,
+			"versionNonce": 115453984,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -17536,7 +17546,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945845726,
+			"updated": 1793113105073,
 			"created": 1791933911886,
 			"link": null,
 			"locked": false,
@@ -17545,8 +17555,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "pYbpjbGq",
 			"type": "text",
-			"x": -2245.080449970832,
-			"y": 1740.8344386873252,
+			"x": -2236.2999379708317,
+			"y": 1654.7103116873254,
 			"width": 137.6759490966797,
 			"height": 35,
 			"angle": 0,
@@ -17564,11 +17574,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b98",
 			"roundness": null,
 			"seed": 1709086625,
-			"version": 1457,
-			"versionNonce": 710176898,
+			"version": 1620,
+			"versionNonce": 2071374880,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945815630,
+			"updated": 1793113105073,
 			"created": 1791933911886,
 			"locked": false,
 			"text": "Processes",
@@ -17591,8 +17601,8 @@ luVOkPBP: [[Flow_control]]
 			"type": "arrow",
 			"x": -992.3947157291725,
 			"y": 573.373933164773,
-			"width": 1088.8477596933196,
-			"height": 1178.4817850937184,
+			"width": 1080.0672476933194,
+			"height": 1092.7809512339218,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffc9c9",
@@ -17608,11 +17618,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 1071317249,
-			"version": 316,
-			"versionNonce": 1295454274,
+			"version": 473,
+			"versionNonce": 202123296,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945815631,
+			"updated": 1793113105073,
 			"created": 1791933919928,
 			"link": null,
 			"locked": false,
@@ -17622,8 +17632,8 @@ luVOkPBP: [[Flow_control]]
 					0
 				],
 				[
-					-1088.8477596933196,
-					1178.4817850937184
+					-1080.0672476933194,
+					1092.7809512339218
 				]
 			],
 			"startBinding": {
@@ -17651,8 +17661,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "slXVXspO",
 			"type": "text",
-			"x": -2592.791847782239,
-			"y": 2278.310075066618,
+			"x": -2584.011335782239,
+			"y": 2192.185948066618,
 			"width": 221.7879180908203,
 			"height": 35,
 			"angle": 0,
@@ -17670,11 +17680,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9N8",
 			"roundness": null,
 			"seed": 1538997871,
-			"version": 1848,
-			"versionNonce": 1321289374,
+			"version": 2003,
+			"versionNonce": 1687299104,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945802878,
+			"updated": 1793113105073,
 			"created": 1791934116602,
 			"locked": false,
 			"text": "system start up",
@@ -17695,8 +17705,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "Em5AXKd7",
 			"type": "text",
-			"x": -2603.6442852448376,
-			"y": 2418.267028004464,
+			"x": -2594.8637732448374,
+			"y": 2332.142901004464,
 			"width": 607.0677490234375,
 			"height": 35,
 			"angle": 0,
@@ -17714,11 +17724,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9NG",
 			"roundness": null,
 			"seed": 902273167,
-			"version": 1873,
-			"versionNonce": 1784333022,
+			"version": 2028,
+			"versionNonce": 855154720,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945802878,
+			"updated": 1793113105073,
 			"created": 1791934116603,
 			"locked": false,
 			"text": "kernel initiates and run \"init\"  -> init - PID 1",
@@ -17739,8 +17749,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "hzjJKTDv",
 			"type": "text",
-			"x": -2620.4921147201085,
-			"y": 2555.3941783470937,
+			"x": -2611.711602720108,
+			"y": 2469.2700513470936,
 			"width": 584.1357421875,
 			"height": 35,
 			"angle": 0,
@@ -17758,11 +17768,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9NV",
 			"roundness": null,
 			"seed": 1568911023,
-			"version": 1866,
-			"versionNonce": 100316958,
+			"version": 2021,
+			"versionNonce": 1731173408,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945802878,
+			"updated": 1793113105073,
 			"created": 1791934116603,
 			"locked": false,
 			"text": "\"Init\" start \"systemd\" -> start all services",
@@ -17783,8 +17793,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "UjVgysCfK0ErnTqIR7f9l",
 			"type": "freedraw",
-			"x": -2498.192900596844,
-			"y": 2324.2780847712256,
+			"x": -2489.412388596844,
+			"y": 2238.1539577712256,
 			"width": 6.8212747473901345,
 			"height": 47.74905333755237,
 			"angle": 0,
@@ -17802,11 +17812,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9Nd",
 			"roundness": null,
 			"seed": 2107113679,
-			"version": 1745,
-			"versionNonce": 1242702686,
+			"version": 1900,
+			"versionNonce": 1931941920,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945802878,
+			"updated": 1793113105073,
 			"created": 1791934116603,
 			"link": null,
 			"locked": false,
@@ -17895,8 +17905,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "NmEuJW3gFgJGwO5o203Dr",
 			"type": "freedraw",
-			"x": -2466.9396005267836,
-			"y": 2471.161463323604,
+			"x": -2458.1590885267833,
+			"y": 2385.037336323604,
 			"width": 22.73764031611006,
 			"height": 65.93919161160466,
 			"angle": 0,
@@ -17914,11 +17924,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9Nl",
 			"roundness": null,
 			"seed": 1469910767,
-			"version": 1750,
-			"versionNonce": 686950302,
+			"version": 1905,
+			"versionNonce": 181343264,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945802878,
+			"updated": 1793113105073,
 			"created": 1791934116603,
 			"link": null,
 			"locked": false,
@@ -18007,8 +18017,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "DDzfmAz3P6pfbl80G0ibv",
 			"type": "rectangle",
-			"x": -2630.615641493761,
-			"y": 2272.6960176563516,
+			"x": -2621.8351294937606,
+			"y": 2186.5718906563516,
 			"width": 646.3768278108603,
 			"height": 346.5573028855761,
 			"angle": 0,
@@ -18028,8 +18038,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 1713068303,
-			"version": 2218,
-			"versionNonce": 583754718,
+			"version": 2373,
+			"versionNonce": 1679265824,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -18037,7 +18047,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945802878,
+			"updated": 1793113105073,
 			"created": 1791934116603,
 			"link": null,
 			"locked": false,
@@ -18046,8 +18056,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "BFE448HOhYFEg98KkaemN",
 			"type": "freedraw",
-			"x": -2506.67004879909,
-			"y": 2353.0905437394995,
+			"x": -2497.88953679909,
+			"y": 2266.9664167394994,
 			"width": 25.19015325758187,
 			"height": 17.011541308193728,
 			"angle": 0,
@@ -18065,11 +18075,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9OG",
 			"roundness": null,
 			"seed": 1049321263,
-			"version": 655,
-			"versionNonce": 1166967902,
+			"version": 810,
+			"versionNonce": 1995476000,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945802878,
+			"updated": 1793113105073,
 			"created": 1791934116603,
 			"link": null,
 			"locked": false,
@@ -18202,8 +18212,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "Vl0SByP-4Zs8xLDWV2YVc",
 			"type": "freedraw",
-			"x": -2458.750230146691,
-			"y": 2511.428598048222,
+			"x": -2449.969718146691,
+			"y": 2425.304471048222,
 			"width": 29.47778290912197,
 			"height": 22.108337181841534,
 			"angle": 0,
@@ -18221,11 +18231,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9OV",
 			"roundness": null,
 			"seed": 861249871,
-			"version": 653,
-			"versionNonce": 406472862,
+			"version": 808,
+			"versionNonce": 1028261920,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945802878,
+			"updated": 1793113105073,
 			"created": 1791934116603,
 			"link": null,
 			"locked": false,
@@ -18350,8 +18360,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "qpQdtjR9z-LWb0Sb9qotN",
 			"type": "freedraw",
-			"x": -2216.6906948789747,
-			"y": 2406.8464280276794,
+			"x": -2207.9101828789744,
+			"y": 2320.7223010276794,
 			"width": 100.89281850302018,
 			"height": 64.99826661420411,
 			"angle": 0,
@@ -18369,11 +18379,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9P",
 			"roundness": null,
 			"seed": 813355009,
-			"version": 615,
-			"versionNonce": 1633912030,
+			"version": 770,
+			"versionNonce": 1930691616,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945802878,
+			"updated": 1793113105073,
 			"created": 1791934230893,
 			"link": null,
 			"locked": false,
@@ -18502,8 +18512,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "P5wFoNrdCYX3fhEYZXp1x",
 			"type": "freedraw",
-			"x": -2331.1653357379982,
-			"y": 2540.723471355721,
+			"x": -2322.384823737998,
+			"y": 2454.599344355721,
 			"width": 148.42890069073565,
 			"height": 67.90866769257264,
 			"angle": 0,
@@ -18521,11 +18531,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9PV",
 			"roundness": null,
 			"seed": 1462267535,
-			"version": 624,
-			"versionNonce": 1654339870,
+			"version": 779,
+			"versionNonce": 1446936608,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945802878,
+			"updated": 1793113105073,
 			"created": 1791934232758,
 			"link": null,
 			"locked": false,
@@ -18690,8 +18700,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "90W00PKK6v6xJb2PHGvY8",
 			"type": "freedraw",
-			"x": -2174.975414847996,
-			"y": 2597.9607917852327,
+			"x": -2166.1949028479958,
+			"y": 2511.8366647852326,
 			"width": 137.75755342767502,
 			"height": 5.820728142162807,
 			"angle": 0,
@@ -18709,11 +18719,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9Q",
 			"roundness": null,
 			"seed": 268351279,
-			"version": 608,
-			"versionNonce": 55731550,
+			"version": 763,
+			"versionNonce": 1723431968,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945802878,
+			"updated": 1793113105073,
 			"created": 1791934234608,
 			"link": null,
 			"locked": false,
@@ -18814,8 +18824,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "pluObPXN",
 			"type": "arrow",
-			"x": -2178.0196034559863,
-			"y": 1840.3344386873252,
+			"x": -2169.239091455986,
+			"y": 1754.2103116873254,
 			"width": 127.69763575219349,
 			"height": 426.8615789690259,
 			"angle": 0,
@@ -18833,11 +18843,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 623906241,
-			"version": 774,
-			"versionNonce": 36681730,
+			"version": 937,
+			"versionNonce": 645199904,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945815631,
+			"updated": 1793113105073,
 			"created": 1791934246271,
 			"link": null,
 			"locked": false,
@@ -18876,8 +18886,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "uIRUJNCd",
 			"type": "text",
-			"x": -2909.2394607900515,
-			"y": 1604.0219335635875,
+			"x": -2900.458948790051,
+			"y": 1517.8978065635877,
 			"width": 200.3399200439453,
 			"height": 35,
 			"angle": 0,
@@ -18893,14 +18903,10 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9a",
 			"roundness": null,
 			"seed": 634239137,
-			"version": 254,
-			"versionNonce": 144815362,
+			"version": 417,
+			"versionNonce": 1499526176,
 			"isDeleted": false,
 			"boundElements": [
-				{
-					"id": "OSmLolwc",
-					"type": "arrow"
-				},
 				{
 					"id": "AZcNg1xx",
 					"type": "arrow"
@@ -18908,9 +18914,13 @@ luVOkPBP: [[Flow_control]]
 				{
 					"id": "BSvY0wYN",
 					"type": "arrow"
+				},
+				{
+					"id": "OSmLolwc",
+					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1791934337270,
 			"locked": false,
 			"text": "view processes",
@@ -18931,8 +18941,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "BSvY0wYN",
 			"type": "arrow",
-			"x": -2271.242475422492,
-			"y": 1756.4992337351498,
+			"x": -2262.461963422492,
+			"y": 1670.37510673515,
 			"width": 432.15706532361355,
 			"height": 133.27759563206837,
 			"angle": 0,
@@ -18950,11 +18960,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 2048799439,
-			"version": 332,
-			"versionNonce": 691890114,
+			"version": 495,
+			"versionNonce": 1164800032,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945815631,
+			"updated": 1793113105074,
 			"created": 1791934343721,
 			"link": null,
 			"locked": false,
@@ -18993,8 +19003,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "8RqBljqC",
 			"type": "rectangle",
-			"x": -3372.0492959424787,
-			"y": 1595.4809455442376,
+			"x": -3363.2687839424784,
+			"y": 1509.3568185442377,
 			"width": 271.60153151703526,
 			"height": 57.82074934041566,
 			"angle": 0,
@@ -19012,8 +19022,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 538257583,
-			"version": 1544,
-			"versionNonce": 274062472,
+			"version": 1708,
+			"versionNonce": 1921674272,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -19021,15 +19031,15 @@ luVOkPBP: [[Flow_control]]
 					"id": "eE7Fj0Hn"
 				},
 				{
-					"id": "z8FI1qb5",
+					"id": "OSmLolwc",
 					"type": "arrow"
 				},
 				{
-					"id": "OSmLolwc",
+					"id": "z8FI1qb5",
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1791934347097,
 			"link": "[[ps]]",
 			"locked": false,
@@ -19038,8 +19048,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "eE7Fj0Hn",
 			"type": "text",
-			"x": -3315.152498994996,
-			"y": 1606.8913202144454,
+			"x": -3306.371986994996,
+			"y": 1520.7671932144456,
 			"width": 157.8079376220703,
 			"height": 35,
 			"angle": 0,
@@ -19055,11 +19065,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9d",
 			"roundness": null,
 			"seed": 602553039,
-			"version": 1529,
-			"versionNonce": 1210776642,
+			"version": 1692,
+			"versionNonce": 1789388832,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1791934347097,
 			"locked": false,
 			"text": "ps / ps aux",
@@ -19080,8 +19090,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "OSmLolwc",
 			"type": "arrow",
-			"x": -2908.7509771892073,
-			"y": 1619.4376673790503,
+			"x": -2899.970465189207,
+			"y": 1533.3135403790504,
 			"width": 186.1967872362361,
 			"height": 4.8171430524419065,
 			"angle": 0,
@@ -19099,11 +19109,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 706457505,
-			"version": 273,
-			"versionNonce": 98961026,
+			"version": 436,
+			"versionNonce": 2041963552,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770704,
+			"updated": 1793113105074,
 			"created": 1791934352077,
 			"link": null,
 			"locked": false,
@@ -19142,8 +19152,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "XmskFlt2",
 			"type": "text",
-			"x": -3711.784833772809,
-			"y": 1585.3361287634225,
+			"x": -3703.004321772809,
+			"y": 1499.2120017634227,
 			"width": 211.5399169921875,
 			"height": 70,
 			"angle": 0,
@@ -19159,8 +19169,8 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9f",
 			"roundness": null,
 			"seed": 2037515873,
-			"version": 347,
-			"versionNonce": 1361466306,
+			"version": 510,
+			"versionNonce": 1839489056,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -19172,7 +19182,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1791934535407,
 			"locked": false,
 			"text": "view processes \ndynamically",
@@ -19193,8 +19203,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "z8FI1qb5",
 			"type": "arrow",
-			"x": -3370.2464629669334,
-			"y": 1624.3971022893795,
+			"x": -3361.465950966933,
+			"y": 1538.2729752893797,
 			"width": 124.49845381368823,
 			"height": 3.882457221426648,
 			"angle": 0,
@@ -19212,11 +19222,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 602363009,
-			"version": 341,
-			"versionNonce": 154480322,
+			"version": 504,
+			"versionNonce": 1449352224,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770704,
+			"updated": 1793113105074,
 			"created": 1791934554685,
 			"link": null,
 			"locked": false,
@@ -19255,8 +19265,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "rTx9da3F",
 			"type": "rectangle",
-			"x": -4082.146685064514,
-			"y": 1588.155592637406,
+			"x": -4073.3661730645135,
+			"y": 1502.0314656374062,
 			"width": 271.60153151703526,
 			"height": 57.82074934041566,
 			"angle": 0,
@@ -19274,8 +19284,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 524903457,
-			"version": 1567,
-			"versionNonce": 1842465608,
+			"version": 1731,
+			"versionNonce": 1172494368,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -19287,7 +19297,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1791934561703,
 			"link": "[[ps]]",
 			"locked": false,
@@ -19296,8 +19306,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "y2JgEo7J",
 			"type": "text",
-			"x": -3970.0059077093165,
-			"y": 1599.5659673076138,
+			"x": -3961.225395709316,
+			"y": 1513.441840307614,
 			"width": 47.319976806640625,
 			"height": 35,
 			"angle": 0,
@@ -19313,11 +19323,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9i",
 			"roundness": null,
 			"seed": 531249153,
-			"version": 1547,
-			"versionNonce": 1438323458,
+			"version": 1710,
+			"versionNonce": 269669408,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1791934561703,
 			"locked": false,
 			"text": "top",
@@ -19338,8 +19348,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "hW7aUmut",
 			"type": "arrow",
-			"x": -3717.2848337728096,
-			"y": 1620.1609443938717,
+			"x": -3708.5043217728094,
+			"y": 1534.0368173938718,
 			"width": 87.76031977466891,
 			"height": 2.9070106417727857,
 			"angle": 0,
@@ -19357,11 +19367,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 76368655,
-			"version": 254,
-			"versionNonce": 774235714,
+			"version": 417,
+			"versionNonce": 182669344,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770704,
+			"updated": 1793113105074,
 			"created": 1791934566352,
 			"link": null,
 			"locked": false,
@@ -19400,8 +19410,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "3f5Uvl9S",
 			"type": "arrow",
-			"x": -2271.242475422492,
-			"y": 1759.5623608007302,
+			"x": -2262.461963422492,
+			"y": 1673.4382338007304,
 			"width": 441.84165731247276,
 			"height": 89.30519140773663,
 			"angle": 0,
@@ -19419,11 +19429,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 1325671372,
-			"version": 351,
-			"versionNonce": 1249845122,
+			"version": 514,
+			"versionNonce": 1313098784,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945815631,
+			"updated": 1793113105074,
 			"created": 1792074552886,
 			"link": null,
 			"locked": false,
@@ -19462,8 +19472,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "-qAq7DqYIgl8Q0PaHY79G",
 			"type": "rectangle",
-			"x": -3384.562881626233,
-			"y": 1814.6472050181997,
+			"x": -3375.7823696262326,
+			"y": 1728.5230780181998,
 			"width": 314.7591906879011,
 			"height": 57.82074934041566,
 			"angle": 0,
@@ -19481,8 +19491,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 1191918412,
-			"version": 1270,
-			"versionNonce": 1310267970,
+			"version": 1433,
+			"versionNonce": 1948633120,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -19498,7 +19508,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792074565286,
 			"link": null,
 			"locked": false,
@@ -19507,8 +19517,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "yHBTBlHn",
 			"type": "text",
-			"x": -3346.295232388239,
-			"y": 1826.0575796884075,
+			"x": -3337.514720388239,
+			"y": 1739.9334526884077,
 			"width": 238.22389221191406,
 			"height": 35,
 			"angle": 0,
@@ -19524,11 +19534,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9n",
 			"roundness": null,
 			"seed": 320729548,
-			"version": 1363,
-			"versionNonce": 1849721346,
+			"version": 1526,
+			"versionNonce": 1484244000,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792074565286,
 			"locked": false,
 			"text": "\"process_name\" &",
@@ -19549,8 +19559,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "KMRgKind",
 			"type": "arrow",
-			"x": -2959.2534216571753,
-			"y": 1850.7839112422275,
+			"x": -2950.472909657175,
+			"y": 1764.6597842422277,
 			"width": 105.05026928115694,
 			"height": 6.861319036553141,
 			"angle": 0,
@@ -19568,11 +19578,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 1952042444,
-			"version": 318,
-			"versionNonce": 1255394818,
+			"version": 481,
+			"versionNonce": 1495941152,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770704,
+			"updated": 1793113105074,
 			"created": 1792075499830,
 			"link": null,
 			"locked": false,
@@ -19611,8 +19621,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "oTVd5yA6",
 			"type": "text",
-			"x": -3407.8555435726794,
-			"y": 2034.8849593469458,
+			"x": -3399.075031572679,
+			"y": 1948.760832346946,
 			"width": 357.1678161621094,
 			"height": 35,
 			"angle": 0,
@@ -19628,8 +19638,8 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9q",
 			"roundness": null,
 			"seed": 668927564,
-			"version": 325,
-			"versionNonce": 1281714562,
+			"version": 488,
+			"versionNonce": 372063264,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -19641,7 +19651,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792075549723,
 			"locked": false,
 			"text": "list the jobs from terminal",
@@ -19662,8 +19672,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "6yseZbLr",
 			"type": "arrow",
-			"x": -3227.2223854603726,
-			"y": 1877.9679543586155,
+			"x": -3218.4418734603723,
+			"y": 1791.8438273586157,
 			"width": 1.9429581524768764,
 			"height": 151.4170049883303,
 			"angle": 0,
@@ -19681,11 +19691,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 590681164,
-			"version": 303,
-			"versionNonce": 820952514,
+			"version": 466,
+			"versionNonce": 829470752,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770705,
+			"updated": 1793113105074,
 			"created": 1792075567503,
 			"link": null,
 			"locked": false,
@@ -19724,8 +19734,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "M3uyH2UvX3hjluyBP7dbZ",
 			"type": "rectangle",
-			"x": -3814.051442771002,
-			"y": 2023.4746908918896,
+			"x": -3805.2709307710015,
+			"y": 1937.3505638918898,
 			"width": 314.7591906879011,
 			"height": 57.82074934041566,
 			"angle": 0,
@@ -19743,8 +19753,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 301237324,
-			"version": 1371,
-			"versionNonce": 219574530,
+			"version": 1534,
+			"versionNonce": 249869344,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -19768,7 +19778,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792075571906,
 			"link": null,
 			"locked": false,
@@ -19777,8 +19787,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "Wk3Dw2Gd",
 			"type": "text",
-			"x": -3685.035830581348,
-			"y": 2034.8850655620975,
+			"x": -3676.2553185813476,
+			"y": 1948.7609385620976,
 			"width": 56.72796630859375,
 			"height": 35,
 			"angle": 0,
@@ -19794,11 +19804,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9t",
 			"roundness": null,
 			"seed": 603331276,
-			"version": 1463,
-			"versionNonce": 2028273858,
+			"version": 1626,
+			"versionNonce": 343486496,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792075571906,
 			"locked": false,
 			"text": "jobs",
@@ -19819,8 +19829,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "7tGIf4hP",
 			"type": "arrow",
-			"x": -3413.3555435726794,
-			"y": 2052.3886030047356,
+			"x": -3404.575031572679,
+			"y": 1966.2644760047358,
 			"width": 80.43670851042089,
 			"height": 0.002100974505992781,
 			"angle": 0,
@@ -19838,11 +19848,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 539942092,
-			"version": 317,
-			"versionNonce": 1033221506,
+			"version": 480,
+			"versionNonce": 1780362272,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770705,
+			"updated": 1793113105074,
 			"created": 1792075573980,
 			"link": null,
 			"locked": false,
@@ -19881,8 +19891,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "edLCymRw",
 			"type": "text",
-			"x": -4389.113420217509,
-			"y": 1911.6762655773032,
+			"x": -4380.332908217509,
+			"y": 1825.5521385773034,
 			"width": 366.2678527832031,
 			"height": 35,
 			"angle": 0,
@@ -19898,8 +19908,8 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9w",
 			"roundness": null,
 			"seed": 1877747020,
-			"version": 271,
-			"versionNonce": 227096642,
+			"version": 434,
+			"versionNonce": 969123872,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -19911,7 +19921,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792075667770,
 			"locked": false,
 			"text": "put process to background",
@@ -19932,8 +19942,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "kxSfY6qyus8epU6LsH6hs",
 			"type": "rectangle",
-			"x": -4832.942853033486,
-			"y": 1907.1636893714972,
+			"x": -4824.162341033486,
+			"y": 1821.0395623714974,
 			"width": 314.7591906879011,
 			"height": 57.82074934041566,
 			"angle": 0,
@@ -19951,8 +19961,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 2044056308,
-			"version": 1440,
-			"versionNonce": 1174200322,
+			"version": 1574,
+			"versionNonce": 1868145696,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -19964,7 +19974,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792075687066,
 			"link": null,
 			"locked": false,
@@ -19973,8 +19983,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "LoTSof2l",
 			"type": "text",
-			"x": -4762.11120080477,
-			"y": 1918.574064041705,
+			"x": -4753.33068880477,
+			"y": 1832.4499370417052,
 			"width": 173.09588623046875,
 			"height": 35,
 			"angle": 0,
@@ -19990,11 +20000,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "b9y",
 			"roundness": null,
 			"seed": 50812020,
-			"version": 1574,
-			"versionNonce": 1227198402,
+			"version": 1707,
+			"versionNonce": 2026905632,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792075687066,
 			"locked": false,
 			"text": "bg %\"job_id\"",
@@ -20015,8 +20025,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "GpZZwey8",
 			"type": "arrow",
-			"x": -4394.613420217509,
-			"y": 1929.4737949549556,
+			"x": -4385.832908217509,
+			"y": 1843.3496679549557,
 			"width": 118.07024212807664,
 			"height": 6.312021784031231,
 			"angle": 0,
@@ -20034,11 +20044,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 88892404,
-			"version": 265,
-			"versionNonce": 1953883266,
+			"version": 429,
+			"versionNonce": 102177824,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770706,
+			"updated": 1793113105074,
 			"created": 1792075713517,
 			"link": null,
 			"locked": false,
@@ -20077,8 +20087,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "GCflKIFC",
 			"type": "text",
-			"x": -4379.510289536211,
-			"y": 2070.2622464406195,
+			"x": -4370.72977753621,
+			"y": 1984.1381194406197,
 			"width": 362.2918701171875,
 			"height": 35,
 			"angle": 0,
@@ -20094,8 +20104,8 @@ luVOkPBP: [[Flow_control]]
 			"index": "bA0",
 			"roundness": null,
 			"seed": 537832012,
-			"version": 289,
-			"versionNonce": 607258434,
+			"version": 452,
+			"versionNonce": 1226741792,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -20107,7 +20117,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792075716603,
 			"locked": false,
 			"text": "put process to foreground",
@@ -20128,8 +20138,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "tBH0VcAz4tB6Blytd5FHC",
 			"type": "rectangle",
-			"x": -4826.852554275867,
-			"y": 2065.7496702348135,
+			"x": -4818.072042275867,
+			"y": 1979.6255432348137,
 			"width": 314.7591906879011,
 			"height": 57.82074934041566,
 			"angle": 0,
@@ -20147,8 +20157,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 2010874060,
-			"version": 1454,
-			"versionNonce": 1286852354,
+			"version": 1588,
+			"versionNonce": 903255072,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -20160,7 +20170,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792075716603,
 			"link": null,
 			"locked": false,
@@ -20169,8 +20179,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "YKCbQmJt",
 			"type": "text",
-			"x": -4755.20890558719,
-			"y": 2077.160044905021,
+			"x": -4746.42839358719,
+			"y": 1991.0359179050213,
 			"width": 171.47189331054688,
 			"height": 35,
 			"angle": 0,
@@ -20186,11 +20196,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "bA2",
 			"roundness": null,
 			"seed": 482969420,
-			"version": 1588,
-			"versionNonce": 1495703234,
+			"version": 1721,
+			"versionNonce": 1110380576,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792075716603,
 			"locked": false,
 			"text": "fg %\"job_id\"",
@@ -20211,8 +20221,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "_W8qu2AtnDKXH52bwmxR5",
 			"type": "arrow",
-			"x": -4385.010289536211,
-			"y": 2088.051985413714,
+			"x": -4376.22977753621,
+			"y": 2001.9278584137144,
 			"width": 121.58307405175583,
 			"height": 6.327602593145912,
 			"angle": 0,
@@ -20230,11 +20240,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 858963404,
-			"version": 286,
-			"versionNonce": 990512194,
+			"version": 450,
+			"versionNonce": 639110176,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770706,
+			"updated": 1793113105074,
 			"created": 1792075716603,
 			"link": null,
 			"locked": false,
@@ -20273,8 +20283,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "AhsYahQB",
 			"type": "arrow",
-			"x": -3819.5514427710023,
-			"y": 2049.1452536701454,
+			"x": -3810.770930771002,
+			"y": 1963.0211266701456,
 			"width": 197.7941246633045,
 			"height": 116.71989412595644,
 			"angle": 0,
@@ -20292,11 +20302,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 19926644,
-			"version": 277,
-			"versionNonce": 1376236866,
+			"version": 440,
+			"versionNonce": 461473824,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770705,
+			"updated": 1793113105074,
 			"created": 1792075727141,
 			"link": null,
 			"locked": false,
@@ -20335,8 +20345,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "KlQikiU5",
 			"type": "arrow",
-			"x": -3819.5514427710013,
-			"y": 2053.3484931492585,
+			"x": -3810.770930771001,
+			"y": 1967.2243661492587,
 			"width": 192.16697664802223,
 			"height": 33.459607779133876,
 			"angle": 0,
@@ -20354,11 +20364,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 157717748,
-			"version": 267,
-			"versionNonce": 1336130818,
+			"version": 430,
+			"versionNonce": 509314080,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770706,
+			"updated": 1793113105074,
 			"created": 1792075729905,
 			"link": null,
 			"locked": false,
@@ -20397,8 +20407,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "llv3BdCf_N2n4b9eD2fy7",
 			"type": "rectangle",
-			"x": -3802.135140800733,
-			"y": 2329.5511060780445,
+			"x": -3793.354628800733,
+			"y": 2243.4269790780445,
 			"width": 314.7591906879011,
 			"height": 57.82074934041566,
 			"angle": 0,
@@ -20416,8 +20426,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 2110604660,
-			"version": 1389,
-			"versionNonce": 78130626,
+			"version": 1544,
+			"versionNonce": 748027936,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -20433,7 +20443,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792075741102,
 			"link": null,
 			"locked": false,
@@ -20442,8 +20452,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "XEXbntji",
 			"type": "text",
-			"x": -3687.6235187844195,
-			"y": 2340.961480748252,
+			"x": -3678.8430067844192,
+			"y": 2254.837353748252,
 			"width": 85.73594665527344,
 			"height": 35,
 			"angle": 0,
@@ -20459,11 +20469,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "bA7",
 			"roundness": null,
 			"seed": 745305844,
-			"version": 1496,
-			"versionNonce": 950084994,
+			"version": 1651,
+			"versionNonce": 102824992,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792075741102,
 			"locked": false,
 			"text": "jobs -l",
@@ -20484,8 +20494,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "kg0aQjUr",
 			"type": "text",
-			"x": -3757.9870148083683,
-			"y": 2192.748878670241,
+			"x": -3749.206502808368,
+			"y": 2106.6247516702415,
 			"width": 212.4359130859375,
 			"height": 35,
 			"angle": 0,
@@ -20501,8 +20511,8 @@ luVOkPBP: [[Flow_control]]
 			"index": "bA8",
 			"roundness": null,
 			"seed": 1047436236,
-			"version": 350,
-			"versionNonce": 975512898,
+			"version": 510,
+			"versionNonce": 1827436576,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -20514,7 +20524,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792075751783,
 			"locked": false,
 			"text": "see job-process",
@@ -20535,8 +20545,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "9SfHvlMQ",
 			"type": "arrow",
-			"x": -3656.6997845660576,
-			"y": 2086.7954402323053,
+			"x": -3647.9192725660573,
+			"y": 2000.6713132323055,
 			"width": 1.1688687377923088,
 			"height": 108.20479985544944,
 			"angle": 0,
@@ -20554,11 +20564,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 272712908,
-			"version": 329,
-			"versionNonce": 334023874,
+			"version": 492,
+			"versionNonce": 1692955680,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770706,
+			"updated": 1793113105074,
 			"created": 1792075759811,
 			"link": null,
 			"locked": false,
@@ -20597,8 +20607,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "RgCfJyJZ",
 			"type": "arrow",
-			"x": -3651.368347552067,
-			"y": 2233.2488786702406,
+			"x": -3642.5878355520667,
+			"y": 2147.1247516702406,
 			"width": 6.2648108923294785,
 			"height": 90.80222740780346,
 			"angle": 0,
@@ -20616,11 +20626,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 1322921332,
-			"version": 281,
-			"versionNonce": 1306745794,
+			"version": 436,
+			"versionNonce": 1946480672,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770707,
+			"updated": 1793113105074,
 			"created": 1792075764231,
 			"link": null,
 			"locked": false,
@@ -20659,8 +20669,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "sOJ1274M",
 			"type": "text",
-			"x": -2960.5320239703165,
-			"y": 1814.9722141457546,
+			"x": -2951.751511970316,
+			"y": 1728.8480871457548,
 			"width": 241.94789123535156,
 			"height": 70,
 			"angle": 0,
@@ -20676,8 +20686,8 @@ luVOkPBP: [[Flow_control]]
 			"index": "bAD",
 			"roundness": null,
 			"seed": 1347832012,
-			"version": 368,
-			"versionNonce": 373904514,
+			"version": 531,
+			"versionNonce": 1647438880,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -20689,7 +20699,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792074529794,
 			"locked": false,
 			"text": "run a process \nin the background",
@@ -20710,8 +20720,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "EpRgps5E",
 			"type": "text",
-			"x": -3156.788793446808,
-			"y": 2698.78997985246,
+			"x": -3148.008281446808,
+			"y": 2612.6658528524604,
 			"width": 182.16787719726562,
 			"height": 35,
 			"angle": 0,
@@ -20729,11 +20739,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "bAa",
 			"roundness": null,
 			"seed": 467116660,
-			"version": 1960,
-			"versionNonce": 1898006018,
+			"version": 2120,
+			"versionNonce": 2036295712,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946797615,
+			"updated": 1793113105074,
 			"created": 1792075983443,
 			"locked": false,
 			"text": "\"kill\" command",
@@ -20754,8 +20764,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "vGesXCsIJG7SVWPHWNdq9",
 			"type": "rectangle",
-			"x": -3271.846834848784,
-			"y": 2677.797875983161,
+			"x": -3263.066322848784,
+			"y": 2591.673748983161,
 			"width": 646.3768278108603,
 			"height": 346.5573028855761,
 			"angle": 0,
@@ -20775,8 +20785,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 1426037236,
-			"version": 2371,
-			"versionNonce": 516765122,
+			"version": 2531,
+			"versionNonce": 1165845536,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -20784,7 +20794,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792946797615,
+			"updated": 1793113105074,
 			"created": 1792075983443,
 			"link": null,
 			"locked": false,
@@ -20793,8 +20803,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "J0moLZb6",
 			"type": "text",
-			"x": -3146.140135146805,
-			"y": 2978.9381485861327,
+			"x": -3137.3596231468046,
+			"y": 2892.814021586133,
 			"width": 102.92796325683594,
 			"height": 35,
 			"angle": 0,
@@ -20812,11 +20822,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "bAc",
 			"roundness": null,
 			"seed": 263002444,
-			"version": 486,
-			"versionNonce": 1151872322,
+			"version": 646,
+			"versionNonce": 1417404448,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946797615,
+			"updated": 1793113105074,
 			"created": 1792076015320,
 			"locked": false,
 			"text": "process",
@@ -20837,8 +20847,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "gW3nsyegI9GpQFO4Mttb2",
 			"type": "freedraw",
-			"x": -3076.6550999991837,
-			"y": 2747.838290429983,
+			"x": -3067.8745879991834,
+			"y": 2661.7141634299833,
 			"width": 22.86662924161692,
 			"height": 203.97032585688066,
 			"angle": 0,
@@ -20856,11 +20866,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "bAd",
 			"roundness": null,
 			"seed": 1066874996,
-			"version": 497,
-			"versionNonce": 125121794,
+			"version": 657,
+			"versionNonce": 1984617504,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946797615,
+			"updated": 1793113105074,
 			"created": 1792076024976,
 			"link": null,
 			"locked": false,
@@ -20957,8 +20967,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "Jcl6DS8Q64NMvA5vpJokZ",
 			"type": "freedraw",
-			"x": -3076.6550999991837,
-			"y": 2939.0033597382894,
+			"x": -3067.8745879991834,
+			"y": 2852.87923273829,
 			"width": 39.33056042553244,
 			"height": 25.610582880562106,
 			"angle": 0,
@@ -20976,11 +20986,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "bAe",
 			"roundness": null,
 			"seed": 1859937996,
-			"version": 501,
-			"versionNonce": 1120617666,
+			"version": 661,
+			"versionNonce": 2094684192,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946797615,
+			"updated": 1793113105074,
 			"created": 1792076025576,
 			"link": null,
 			"locked": false,
@@ -21093,8 +21103,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "APM1QXJ3",
 			"type": "text",
-			"x": -3023.1148030211793,
-			"y": 2822.719493501139,
+			"x": -3014.334291021179,
+			"y": 2736.5953665011393,
 			"width": 370.8318176269531,
 			"height": 35,
 			"angle": 0,
@@ -21112,11 +21122,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "bAf",
 			"roundness": null,
 			"seed": 533938804,
-			"version": 573,
-			"versionNonce": 273243266,
+			"version": 733,
+			"versionNonce": 2082100256,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946797615,
+			"updated": 1793113105074,
 			"created": 1792076027590,
 			"locked": false,
 			"text": "sends \"signal\" to processes",
@@ -21137,8 +21147,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "SrLk5ikIeTShunJXBrpza",
 			"type": "freedraw",
-			"x": -2849.8181797923935,
-			"y": 2810.950201093528,
+			"x": -2841.037667792393,
+			"y": 2724.8260740935284,
 			"width": 107.93051793379709,
 			"height": 113.41849499510226,
 			"angle": 0,
@@ -21156,11 +21166,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "bAg",
 			"roundness": null,
 			"seed": 1541003508,
-			"version": 514,
-			"versionNonce": 2108587074,
+			"version": 674,
+			"versionNonce": 167432224,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946797615,
+			"updated": 1793113105074,
 			"created": 1792076052383,
 			"link": null,
 			"locked": false,
@@ -21325,8 +21335,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "cbuVfkyE",
 			"type": "text",
-			"x": -3036.5643735144295,
-			"y": 2522.2802678556955,
+			"x": -3027.783861514429,
+			"y": 2436.1561408556954,
 			"width": 175.81190490722656,
 			"height": 35,
 			"angle": 0,
@@ -21342,8 +21352,8 @@ luVOkPBP: [[Flow_control]]
 			"index": "bAh",
 			"roundness": null,
 			"seed": 2015520588,
-			"version": 355,
-			"versionNonce": 304820866,
+			"version": 510,
+			"versionNonce": 2120993824,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -21359,7 +21369,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792076080346,
 			"locked": false,
 			"text": "kill a process",
@@ -21380,8 +21390,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "8RI0afyQ",
 			"type": "arrow",
-			"x": -2271.242475422492,
-			"y": 1766.2228982944998,
+			"x": -2262.461963422492,
+			"y": 1680.0987712945,
 			"width": 584.0099931847108,
 			"height": 766.343714921285,
 			"angle": 0,
@@ -21399,11 +21409,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 418556916,
-			"version": 393,
-			"versionNonce": 305389378,
+			"version": 556,
+			"versionNonce": 861751328,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945815631,
+			"updated": 1793113105074,
 			"created": 1792076088630,
 			"link": null,
 			"locked": false,
@@ -21442,8 +21452,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "KGyHOMbx",
 			"type": "arrow",
-			"x": -2948.638692372066,
-			"y": 2562.7802678556955,
+			"x": -2939.858180372066,
+			"y": 2476.6561408556954,
 			"width": 0.042761613234233664,
 			"height": 109.51760812746534,
 			"angle": 0,
@@ -21461,11 +21471,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 82086860,
-			"version": 377,
-			"versionNonce": 1491414402,
+			"version": 532,
+			"versionNonce": 1153385504,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946797615,
+			"updated": 1793113105074,
 			"created": 1792076092309,
 			"link": null,
 			"locked": false,
@@ -21504,8 +21514,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "m1eg7j8v",
 			"type": "rectangle",
-			"x": -3786.3320594642946,
-			"y": 2521.681314557888,
+			"x": -3777.5515474642943,
+			"y": 2435.557187557888,
 			"width": 314.7591906879011,
 			"height": 57.82074934041566,
 			"angle": 0,
@@ -21523,8 +21533,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 721130828,
-			"version": 1432,
-			"versionNonce": 1353935304,
+			"version": 1588,
+			"versionNonce": 1350680608,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -21536,7 +21546,7 @@ luVOkPBP: [[Flow_control]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792076350713,
 			"link": "[[kill]]",
 			"locked": false,
@@ -21545,8 +21555,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "lTzmBqSO",
 			"type": "text",
-			"x": -3646.1304426359693,
-			"y": 2533.0916892280957,
+			"x": -3637.349930635969,
+			"y": 2446.9675622280956,
 			"width": 34.35595703125,
 			"height": 35,
 			"angle": 0,
@@ -21562,11 +21572,11 @@ luVOkPBP: [[Flow_control]]
 			"index": "bAl",
 			"roundness": null,
 			"seed": 200477644,
-			"version": 1536,
-			"versionNonce": 1474617730,
+			"version": 1691,
+			"versionNonce": 915717152,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792945783991,
+			"updated": 1793113105074,
 			"created": 1792076350713,
 			"locked": false,
 			"text": "kill",
@@ -21587,8 +21597,8 @@ luVOkPBP: [[Flow_control]]
 		{
 			"id": "Oc0GDYjX",
 			"type": "arrow",
-			"x": -3042.0643735144295,
-			"y": 2539.9204901717144,
+			"x": -3033.283861514429,
+			"y": 2453.796363171715,
 			"width": 424.0084952619641,
 			"height": 10.54025881529651,
 			"angle": 0,
@@ -21606,11 +21616,11 @@ luVOkPBP: [[Flow_control]]
 				"type": 2
 			},
 			"seed": 144787956,
-			"version": 261,
-			"versionNonce": 1313248130,
+			"version": 421,
+			"versionNonce": 1491613728,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1792946770708,
+			"updated": 1793113105074,
 			"created": 1792076358761,
 			"link": null,
 			"locked": false,
@@ -22991,8 +23001,8 @@ luVOkPBP: [[Flow_control]]
 				"type": 3
 			},
 			"seed": 846493342,
-			"version": 1540,
-			"versionNonce": 451685219,
+			"version": 1541,
+			"versionNonce": 451685220,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -23815,52 +23825,105 @@ luVOkPBP: [[Flow_control]]
 			"moveMidPointsWithElement": false
 		},
 		{
-			"id": "bWWf4fCysrsb72C5PcUXs",
+			"id": "ZJsB3BjBz4ETeJJTWxuEj",
 			"type": "rectangle",
-			"x": 3186.3328665117833,
-			"y": 273.7839763497134,
-			"width": 271.60153151703526,
-			"height": 57.82074934041566,
+			"x": 436.0670021123615,
+			"y": 2551.683754462227,
+			"width": 178,
+			"height": 152,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#a5d8ff",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
+			"fillStyle": "solid",
+			"strokeWidth": 2,
 			"strokeStyle": "solid",
-			"roughness": 0,
+			"roughness": 1,
 			"opacity": 100,
-			"groupIds": [],
+			"groupIds": [
+				"0kwjiP1rB4Sv3Sie9Z48n"
+			],
 			"frameId": null,
-			"index": "b2q",
+			"index": "bBj",
 			"roundness": {
 				"type": 3
 			},
-			"seed": 277817750,
-			"version": 412,
-			"versionNonce": 1400188183,
-			"isDeleted": true,
+			"seed": 1909176352,
+			"version": 1491,
+			"versionNonce": 1858528288,
+			"isDeleted": false,
 			"boundElements": [
 				{
 					"type": "text",
-					"id": "5w1WoXvw"
+					"id": "6OqAxO0F"
+				},
+				{
+					"id": "1qaGwEhS",
+					"type": "arrow"
+				},
+				{
+					"id": "P8SnwufE",
+					"type": "arrow"
 				}
 			],
-			"updated": 1793035724014,
-			"created": 1790872475802,
+			"updated": 1793112940513,
+			"created": 1793112890771,
 			"link": null,
 			"locked": false,
 			"hasTextLink": false
 		},
 		{
-			"id": "5w1WoXvw",
+			"id": "6OqAxO0F",
 			"type": "text",
-			"x": 3301.0916477121955,
-			"y": 285.1943510199212,
-			"width": 42.08396911621094,
-			"height": 35,
+			"x": 455.05303269097476,
+			"y": 2592.683754462227,
+			"width": 140.02793884277344,
+			"height": 70,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#a5d8ff",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"0kwjiP1rB4Sv3Sie9Z48n"
+			],
+			"frameId": null,
+			"index": "bBk",
+			"roundness": null,
+			"seed": 199210016,
+			"version": 1578,
+			"versionNonce": 1881057760,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1793112926721,
+			"created": 1793112890771,
+			"locked": false,
+			"text": "Text\nprocessing",
+			"rawText": "Text processing",
+			"fontSize": 28,
+			"baseFontSize": null,
+			"fontFamily": 5,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "ZJsB3BjBz4ETeJJTWxuEj",
+			"originalText": "Text processing",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"labelPosition": null,
+			"hasTextLink": false
+		},
+		{
+			"id": "1qaGwEhS",
+			"type": "arrow",
+			"x": -577.1633894115489,
+			"y": 592.0860739080854,
+			"width": 1007.2303915239104,
+			"height": 2023.5586849975361,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffc9c9",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
@@ -23868,30 +23931,196 @@ luVOkPBP: [[Flow_control]]
 			"opacity": 100,
 			"groupIds": [],
 			"frameId": null,
-			"index": "b2r",
-			"roundness": null,
-			"seed": 1197573846,
-			"version": 402,
-			"versionNonce": 730928089,
-			"isDeleted": true,
-			"boundElements": [],
-			"updated": 1793035724014,
-			"created": 1790872475802,
+			"index": "bBl",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1213881376,
+			"version": 138,
+			"versionNonce": 778989024,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1793112926722,
+			"created": 1793112922468,
+			"link": null,
 			"locked": false,
-			"text": "file",
-			"rawText": "file",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					1007.2303915239104,
+					2023.5586849975361
+				]
+			],
+			"startBinding": {
+				"elementId": "qvrFhxju",
+				"mode": "orbit",
+				"fixedPoint": [
+					1,
+					0.5001
+				]
+			},
+			"endBinding": {
+				"elementId": "ZJsB3BjBz4ETeJJTWxuEj",
+				"mode": "orbit",
+				"fixedPoint": [
+					0,
+					0.5001
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
+		},
+		{
+			"id": "gGRMAIAw",
+			"type": "rectangle",
+			"x": 1003.3294244426486,
+			"y": 2553.159135030015,
+			"width": 178,
+			"height": 152,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"05fmi-XOdtKnR1pznokc6"
+			],
+			"frameId": null,
+			"index": "bBm",
+			"roundness": {
+				"type": 3
+			},
+			"seed": 742475808,
+			"version": 1580,
+			"versionNonce": 125458464,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "e9UtaYxs"
+				},
+				{
+					"id": "P8SnwufE",
+					"type": "arrow"
+				}
+			],
+			"updated": 1793113041390,
+			"created": 1793112936373,
+			"link": "[[Regex]]",
+			"locked": false,
+			"hasTextLink": false
+		},
+		{
+			"id": "e9UtaYxs",
+			"type": "text",
+			"x": 1050.9454446452853,
+			"y": 2611.659135030015,
+			"width": 82.76795959472656,
+			"height": 35,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"05fmi-XOdtKnR1pznokc6"
+			],
+			"frameId": null,
+			"index": "bBn",
+			"roundness": null,
+			"seed": 19088416,
+			"version": 1678,
+			"versionNonce": 2134245408,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1793112964003,
+			"created": 1793112936373,
+			"locked": false,
+			"text": "Regex",
+			"rawText": "Regex",
 			"fontSize": 28,
 			"baseFontSize": null,
 			"fontFamily": 5,
 			"textAlign": "center",
 			"verticalAlign": "middle",
-			"containerId": "bWWf4fCysrsb72C5PcUXs",
-			"originalText": "file",
+			"containerId": "gGRMAIAw",
+			"originalText": "Regex",
 			"autoResize": true,
 			"lineHeight": 1.25,
 			"labelPosition": null,
-			"hasTextLink": false,
-			"link": null
+			"hasTextLink": false
+		},
+		{
+			"id": "P8SnwufE",
+			"type": "arrow",
+			"x": 620.0670021123616,
+			"y": 2627.721695633475,
+			"width": 377.2624223302871,
+			"height": 1.4298982252917085,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffc9c9",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "bBo",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 819884064,
+			"version": 46,
+			"versionNonce": 79756320,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1793112964003,
+			"created": 1793112940512,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					377.2624223302871,
+					1.4298982252917085
+				]
+			],
+			"startBinding": {
+				"elementId": "ZJsB3BjBz4ETeJJTWxuEj",
+				"mode": "orbit",
+				"fixedPoint": [
+					1,
+					0.5001
+				]
+			},
+			"endBinding": {
+				"elementId": "gGRMAIAw",
+				"mode": "orbit",
+				"fixedPoint": [
+					0,
+					0.5001
+				]
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false,
+			"moveMidPointsWithElement": false
 		}
 	],
 	"appState": {
@@ -23913,10 +24142,10 @@ luVOkPBP: [[Flow_control]]
 		"currentItemEndArrowhead": "arrow",
 		"currentItemArrowType": "round",
 		"currentItemFrameRole": null,
-		"scrollX": 1182.558543144569,
-		"scrollY": 1212.6765344801634,
+		"scrollX": 410.79873942319387,
+		"scrollY": -1327.1739442169646,
 		"zoom": {
-			"value": 0.342266
+			"value": 0.492266
 		},
 		"currentItemRoundness": "round",
 		"gridSize": 20,
