@@ -1,3 +1,4 @@
+
 ## 1. Tổng quan
 
 Regular expression (regex) = pattern mô tả một tập chuỗi text. POSIX chia làm 2 loại:
@@ -87,104 +88,6 @@ locate --regex 'bin/(bz|gz|zip)'
 less                          # gõ /pattern để search bằng regex
 ```
 
-## 7. Mapping BRE / ERE ↔ PCRE
+## 7. PCRE
 
-**PCRE** (Perl Compatible Regular Expression): kiểu regex của Perl, Python, JavaScript, PHP... Trong Linux dùng qua `grep -P`.
-
-⭐ Cú pháp PCRE gần giống ERE (không cần escape `( ) { } ? +`), thêm shorthand và nhiều tính năng mà POSIX không có.
-
-### Phần giống nhau
-
-| Chức năng | BRE | ERE | PCRE |
-|---|---|---|---|
-| Đầu / cuối dòng | `^` `$` | `^` `$` | `^` `$` |
-| Ký tự bất kỳ | `.` | `.` | `.` (không match newline) |
-| 0+ lần | `*` | `*` | `*` |
-| 1+ lần | `\+` (GNU) | `+` | `+` |
-| 0 hoặc 1 lần | `\?` (GNU) | `?` | `?` |
-| Lặp n..m lần | `\{n,m\}` | `{n,m}` | `{n,m}` |
-| Group | `\(abc\)` | `(abc)` | `(abc)` |
-| Back-reference | `\1` | `\1` (GNU) | `\1` |
-
-Alternation: BRE `a\|b` (GNU), ERE và PCRE đều là `a|b`.
-
-### Character class
-
-| Ý nghĩa               | POSIX (BRE/ERE)        | PCRE      |
-| --------------------- | ---------------------- | --------- |
-| Chữ số                | `[[:digit:]]`          | `\d`      |
-| Không phải số         | `[^[:digit:]]`         | `\D`      |
-| Ký tự "word"          | `[[:alnum:]_]`         | `\w`      |
-| Không phải word       | `[^[:alnum:]_]`        | `\W`      |
-| Whitespace            | `[[:space:]]`          | `\s`      |
-| Không phải whitespace | `[^[:space:]]`         | `\S`      |
-| Ranh giới từ          | `\<` `\>` (GNU)        | `\b`      |
-| Tab / newline         | không có (gõ tab thật) | `\t` `\n` |
-
-PCRE vẫn hiểu POSIX class bên trong `[ ]`, vd `[[:upper:]]`. GNU grep cũng hỗ trợ `\w \s \b` ở BRE/ERE, nhưng không hỗ trợ `\d`.
-
-### Chỉ PCRE mới có
-
-| Cú pháp                 | Ý nghĩa                                      |
-| ----------------------- | -------------------------------------------- |
-| `*?` `+?` `??` `{n,m}?` | Lazy (non-greedy): match ngắn nhất có thể    |
-| `(?:abc)`               | Group không capture                          |
-| `(?<name>abc)`          | Named group                                  |
-| `(?=abc)` / `(?!abc)`   | Lookahead: phía sau là / không là `abc`      |
-| `(?<=abc)` / `(?<!abc)` | Lookbehind: phía trước là / không là `abc`   |
-| `(?i)`                  | Bật không phân biệt hoa thường trong pattern |
-| `\K`                    | Bỏ phần đã match trước đó khỏi kết quả       |
-
-```bash
-# Cùng một pattern ở 3 kiểu
-grep    '^[[:digit:]]\{3\}-[[:digit:]]\{4\}$' file   # BRE
-grep -E '^[[:digit:]]{3}-[[:digit:]]{4}$'     file   # ERE
-grep -P '^\d{3}-\d{4}$'                       file   # PCRE
-
-# Lookbehind / \K: lấy giá trị sau "port="
-grep -oP '(?<=port=)\d+' config
-grep -oP 'port=\K\d+' config
-```
-
-### Lazy quantifier `*?` `+?` `??` `{n,m}?`
-
-**Greedy** (mặc định, BRE/ERE/PCRE đều vậy): quantifier ăn **nhiều nhất có thể**, rồi nhả dần (backtrack) cho tới khi phần còn lại của pattern match được.
-
-**Lazy** (chỉ PCRE, thêm `?` sau quantifier): ăn **ít nhất có thể**, rồi lấy thêm từng ký tự cho tới khi phần còn lại match được.
-
-| Greedy  | Lazy     | Lazy nghĩa là                          |
-| ------- | -------- | -------------------------------------- |
-| `*`     | `*?`     | 0+ lần, thử 0 trước                    |
-| `+`     | `+?`     | 1+ lần, thử 1 trước                    |
-| `?`     | `??`     | 0 hoặc 1 lần, thử 0 trước              |
-| `{n,m}` | `{n,m}?` | n..m lần, thử n trước                  |
-
-Cách engine chạy với `<b>.*?</b>` trên `<b>a</b><b>c</b>`:
-
-1. Match `<b>`
-2. `.*?` lấy 0 ký tự → thử `</b>` tại `a` → fail
-3. `.*?` lấy thêm 1 ký tự (`a`) → thử `</b>` → match → kết quả `<b>a</b>`
-
-Với `.*` (greedy): `.*` ăn hết tới cuối dòng, rồi nhả dần từ phải sang tới khi gặp `</b>` cuối cùng → kết quả cả chuỗi `<b>a</b><b>c</b>`.
-
-```bash
-# (cần locale UTF-8 cho grep -P)
-echo '<b>a</b><b>c</b>' | grep -oP '<b>.*</b>'    # <b>a</b><b>c</b>
-echo '<b>a</b><b>c</b>' | grep -oP '<b>.*?</b>'   # <b>a</b>  và  <b>c</b>
-
-echo 'xaaay'  | grep -oP 'xa+'       # xaaa
-echo 'xaaay'  | grep -oP 'xa+?'      # xa
-
-echo 'colour' | grep -oP 'colou?'    # colou
-echo 'colour' | grep -oP 'colou??'   # colo
-
-echo '123456' | grep -oP '\d{2,4}'   # 1234, 56
-echo '123456' | grep -oP '\d{2,4}?'  # 12, 34, 56
-
-echo '"a" and "b"' | grep -oP '".*?"'   # "a", "b"
-```
-
-⭐ Lưu ý:
-- Lazy chỉ khác greedy khi **phía sau còn pattern** để dừng lại. `a+?` đứng cuối pattern luôn chỉ match 1 ký tự `a`; `a*?` đứng cuối match chuỗi rỗng.
-- Lazy không đổi **vị trí bắt đầu**: engine vẫn lấy match bắt đầu sớm nhất (leftmost), lazy chỉ ảnh hưởng độ dài.
-- BRE/ERE không có lazy. Cách thay thế là dùng negated class: `"[^"]*"` cho kết quả giống `".*?"`, và thường nhanh hơn vì không phải backtrack.
+PCRE (`grep -P`, Perl, Python, JS...): mapping với BRE/ERE, greedy/lazy, `(?:)`, named group, lookahead/lookbehind, `\K`... xem [[Regex_PCRE]]
