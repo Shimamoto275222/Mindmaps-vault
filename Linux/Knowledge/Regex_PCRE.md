@@ -31,16 +31,16 @@ Alternation: BRE `a\|b` (GNU), ERE và PCRE đều là `a|b`.
 
 ### Character class
 
-| Ý nghĩa               | POSIX (BRE/ERE)        | PCRE      |
-| --------------------- | ---------------------- | --------- |
-| Chữ số                | `[[:digit:]]`          | `\d`      |
-| Không phải số         | `[^[:digit:]]`         | `\D`      |
-| Ký tự "word"          | `[[:alnum:]_]`         | `\w`      |
-| Không phải word       | `[^[:alnum:]_]`        | `\W`      |
-| Whitespace            | `[[:space:]]`          | `\s`      |
-| Không phải whitespace | `[^[:space:]]`         | `\S`      |
-| Ranh giới từ          | `\<` `\>` (GNU)        | `\b`      |
-| Tab / newline         | không có (gõ tab thật) | `\t` `\n` |
+| Ý nghĩa               | POSIX (BRE/ERE)        | PCRE      | Gồm các ký tự                                                       |
+| --------------------- | ---------------------- | --------- | ------------------------------------------------------------------- |
+| Chữ số                | `[[:digit:]]`          | `\d`      | `0-9`                                                               |
+| Không phải số         | `[^[:digit:]]`         | `\D`      | mọi ký tự trừ `0-9` (chữ, dấu câu, space...)                        |
+| Ký tự "word"          | `[[:alnum:]_]`         | `\w`      | `a-z` `A-Z` `0-9` và `_`                                            |
+| Không phải word       | `[^[:alnum:]_]`        | `\W`      | mọi ký tự trừ chữ, số, `_` (vd `-` `.` `@` space)                   |
+| Whitespace            | `[[:space:]]`          | `\s`      | space, tab `\t`, newline `\n`, `\r`, form feed `\f`, vertical tab `\v` |
+| Không phải whitespace | `[^[:space:]]`         | `\S`      | mọi ký tự trừ các ký tự whitespace ở trên                           |
+| Ranh giới từ          | `\<` `\>` (GNU)        | `\b`      | không phải ký tự: là **vị trí** giữa 1 ký tự `\w` và 1 ký tự `\W` (hoặc đầu/cuối dòng) |
+| Tab / newline         | không có (gõ tab thật) | `\t` `\n` | `\t` = tab (0x09), `\n` = newline (0x0A)                            |
 
 PCRE vẫn hiểu POSIX class bên trong `[ ]`, vd `[[:upper:]]`. GNU grep cũng hỗ trợ `\w \s \b` ở BRE/ERE, nhưng không hỗ trợ `\d`.
 
