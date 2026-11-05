@@ -14,10 +14,10 @@ set -euo pipefail
 
 ## 2. ⭐ Strict mode: `set -euo pipefail`
 
-| Option | Tác dụng |
-| --- | --- |
-| `-e` | một lệnh lỗi → dừng script ngay |
-| `-u` | dùng biến chưa gán → báo lỗi và dừng (bắt lỗi gõ sai tên biến) |
+| Option        | Tác dụng                                                                               |
+| ------------- | -------------------------------------------------------------------------------------- |
+| `-e`          | một lệnh lỗi → dừng script ngay                                                        |
+| `-u`          | dùng biến chưa gán → báo lỗi và dừng (bắt lỗi gõ sai tên biến)                         |
 | `-o pipefail` | pipe bị coi là lỗi nếu **bất kỳ** lệnh nào trong pipe lỗi (mặc định chỉ xét lệnh cuối) |
 
 Lưu ý khi bật:

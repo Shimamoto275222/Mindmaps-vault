@@ -1,15 +1,15 @@
 ## 1. Biến đặc biệt
 
-| Biến | Ý nghĩa |
-| --- | --- |
-| `$0` | tên script (đúng như lúc gọi, vd `./run.sh`) |
-| `$1` … `$9` | tham số thứ 1 … 9 |
-| `${10}` | từ tham số thứ 10 phải có `{}` (`$10` = `$1` + chữ `0`) |
-| ⭐ `$#` | số tham số (không tính `$0`) |
-| ⭐ `"$@"` | tất cả tham số, giữ nguyên từng cái |
-| `"$*"` | tất cả tham số, gộp thành 1 chuỗi |
-| `$?` | exit status của lệnh vừa chạy |
-| `$$` | PID của script |
+| Biến        | Ý nghĩa                                                 |
+| ----------- | ------------------------------------------------------- |
+| `$0`        | tên script (đúng như lúc gọi, vd `./run.sh`)            |
+| `$1` … `$9` | tham số thứ 1 … 9                                       |
+| `${10}`     | từ tham số thứ 10 phải có `{}` (`$10` = `$1` + chữ `0`) |
+| ⭐ `$#`     | số tham số (không tính `$0`)                            |
+| ⭐ `"$@"`   | tất cả tham số, giữ nguyên từng cái                     |
+| `"$*"`      | tất cả tham số, gộp thành 1 chuỗi                       |
+| `$?`        | exit status của lệnh vừa chạy                           |
+| `$$`        | PID của script                                          |
 
 ```bash
 #!/bin/bash

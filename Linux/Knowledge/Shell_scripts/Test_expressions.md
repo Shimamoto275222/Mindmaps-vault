@@ -10,41 +10,41 @@ if grep -q root /etc/passwd; then echo "Có user root"; fi
 
 ## 2. Ba cách viết điều kiện
 
-| Dạng | Dùng cho | Ghi chú |
-| --- | --- | --- |
-| `[ expr ]` (= `test expr`) | file, chuỗi, số | POSIX, chạy mọi shell. `[` là một lệnh → bắt buộc có dấu cách: `[ "$a" = 1 ]` |
-| ⭐ `[[ expr ]]` | như `[ ]` + wildcard `==`, regex `=~` | Của bash, không bị tách từ → an toàn hơn |
-| ⭐ `(( expr ))` | số nguyên | Viết `<` `>` `==` như toán, biến không cần `$` |
+| Dạng                       | Dùng cho                              | Ghi chú                                                                       |
+| -------------------------- | ------------------------------------- | ----------------------------------------------------------------------------- |
+| `[ expr ]` (= `test expr`) | file, chuỗi, số                       | POSIX, chạy mọi shell. `[` là một lệnh → bắt buộc có dấu cách: `[ "$a" = 1 ]` |
+| ⭐ `[[ expr ]]`            | như `[ ]` + wildcard `==`, regex `=~` | Của bash, không bị tách từ → an toàn hơn                                      |
+| ⭐ `(( expr ))`            | số nguyên                             | Viết `<` `>` `==` như toán, biến không cần `$`                                |
 
 ## 3. Kiểm tra file
 
-| Biểu thức | True khi |
-| --- | --- |
-| `-e f` | tồn tại |
-| ⭐ `-f f` | là file thường |
-| ⭐ `-d f` | là thư mục |
-| `-L f` | là symlink |
+| Biểu thức          | True khi                      |
+| ------------------ | ----------------------------- |
+| `-e f`             | tồn tại                       |
+| ⭐ `-f f`          | là file thường                |
+| ⭐ `-d f`          | là thư mục                    |
+| `-L f`             | là symlink                    |
 | `-r` / `-w` / `-x` | có quyền đọc / ghi / thực thi |
-| `-s f` | kích thước > 0 |
-| `f1 -nt f2` | `f1` mới hơn `f2` |
+| `-s f`             | kích thước > 0                |
+| `f1 -nt f2`        | `f1` mới hơn `f2`             |
 
 ## 4. So sánh chuỗi
 
-| Biểu thức | True khi |
-| --- | --- |
-| ⭐ `-z s` | chuỗi rỗng |
-| ⭐ `-n s` | chuỗi khác rỗng |
-| `s1 == s2` / `s1 != s2` | bằng / khác |
-| `[[ $s == *.txt ]]` | khớp wildcard (pattern **không** để trong nháy) |
-| `[[ $s =~ ^[0-9]+$ ]]` | khớp regex; nhóm bắt được nằm trong mảng `BASH_REMATCH` |
+| Biểu thức               | True khi                                                |
+| ----------------------- | ------------------------------------------------------- |
+| ⭐ `-z s`               | chuỗi rỗng                                              |
+| ⭐ `-n s`               | chuỗi khác rỗng                                         |
+| `s1 == s2` / `s1 != s2` | bằng / khác                                             |
+| `[[ $s == *.txt ]]`     | khớp wildcard (pattern **không** để trong nháy)         |
+| `[[ $s =~ ^[0-9]+$ ]]`  | khớp regex; nhóm bắt được nằm trong mảng `BASH_REMATCH` |
 
 ## 5. So sánh số nguyên
 
-| `[ ]` / `[[ ]]` | `(( ))` | Ý nghĩa |
-| --- | --- | --- |
-| `-eq` / `-ne` | `==` / `!=` | bằng / khác |
-| `-lt` / `-le` | `<` / `<=` | nhỏ hơn / ≤ |
-| `-gt` / `-ge` | `>` / `>=` | lớn hơn / ≥ |
+| `[ ]` / `[[ ]]` | `(( ))`     | Ý nghĩa     |
+| --------------- | ----------- | ----------- |
+| `-eq` / `-ne`   | `==` / `!=` | bằng / khác |
+| `-lt` / `-le`   | `<` / `<=`  | nhỏ hơn / ≤ |
+| `-gt` / `-ge`   | `>` / `>=`  | lớn hơn / ≥ |
 
 > [!warning]
 > `[[ 10 > 9 ]]` → **false**, vì `>` trong `[[ ]]` so sánh **chuỗi**. So số thì dùng `-gt` hoặc `(( 10 > 9 ))`.

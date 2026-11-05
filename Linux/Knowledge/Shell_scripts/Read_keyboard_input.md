@@ -22,16 +22,16 @@ read -r a b c           # gõ: one two three four
 
 ## 2. Options thường dùng
 
-| Option | Ý nghĩa |
-| --- | --- |
-| ⭐ `-p "text"` | hiện lời nhắc (prompt) |
-| ⭐ `-r` | giữ nguyên dấu `\` (raw) — **nên luôn dùng** |
-| `-s` | không hiện ký tự đang gõ (mật khẩu) |
-| `-n N` | đọc đủ `N` ký tự là dừng, không cần Enter |
-| `-t giây` | timeout — hết giờ thì `read` trả exit status khác 0 |
-| `-a mảng` | đọc các từ vào mảng |
-| `-e` | sửa dòng đang gõ bằng phím mũi tên, Tab (Readline) |
-| `-i "text"` | điền sẵn giá trị gợi ý (đi kèm `-e`) |
+| Option         | Ý nghĩa                                             |
+| -------------- | --------------------------------------------------- |
+| ⭐ `-p "text"` | hiện lời nhắc (prompt)                              |
+| ⭐ `-r`        | giữ nguyên dấu `\` (raw) — **nên luôn dùng**        |
+| `-s`           | không hiện ký tự đang gõ (mật khẩu)                 |
+| `-n N`         | đọc đủ `N` ký tự là dừng, không cần Enter           |
+| `-t giây`      | timeout — hết giờ thì `read` trả exit status khác 0 |
+| `-a mảng`      | đọc các từ vào mảng                                 |
+| `-e`           | sửa dòng đang gõ bằng phím mũi tên, Tab (Readline)  |
+| `-i "text"`    | điền sẵn giá trị gợi ý (đi kèm `-e`)                |
 
 > Vì sao luôn dùng `-r`: gõ `C:\new\data` → `read x` cho ra `C:newdata` (mất `\`), `read -r x` giữ nguyên `C:\new\data`.
 
