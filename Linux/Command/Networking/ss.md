@@ -13,16 +13,16 @@ Dùng để trả lời: _"Dịch vụ web/SSH có đang chạy và nghe đúng 
 
 ## Các tùy chọn cơ bản
 
-|Tùy chọn|Ý nghĩa|
-|---|---|
-|`-t`|TCP|
-|`-u`|UDP|
-|`-l`|Chỉ socket đang **lắng nghe**|
-|`-a`|Tất cả (cả lắng nghe lẫn đã kết nối)|
-|`-n`|Hiện số (IP, port), không đổi sang tên → nhanh và rõ|
-|`-p`|Hiện **tiến trình** sở hữu socket (cần `sudo` để thấy của user khác)|
-|`-4` / `-6`|Chỉ IPv4 / IPv6|
-|`-s`|Thống kê tổng hợp|
+| Tùy chọn    | Ý nghĩa                                                              |
+| ----------- | -------------------------------------------------------------------- |
+| `-t`        | TCP                                                                  |
+| `-u`        | UDP                                                                  |
+| `-l`        | Chỉ socket đang **lắng nghe**                                        |
+| `-a`        | Tất cả (cả lắng nghe lẫn đã kết nối)                                 |
+| `-n`        | Hiện số (IP, port), không đổi sang tên → nhanh và rõ                 |
+| `-p`        | Hiện **tiến trình** sở hữu socket (cần `sudo` để thấy của user khác) |
+| `-4` / `-6` | Chỉ IPv4 / IPv6                                                      |
+| `-s`        | Thống kê tổng hợp                                                    |
 
 ## Các lệnh hay dùng
 
