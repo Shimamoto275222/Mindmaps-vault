@@ -9,6 +9,9 @@
 -l  
 # recursive.  
 -R  
+# sort by modification 
+-t 
+-tr # -> -r : reverse
 # dir itself. Not show contents inside  
 -d
 ```
