@@ -9,7 +9,7 @@ cd ~
 cd ..  
   
 # go previous dir  
-cd ~  
+cd - 
   
 # go root  
 cd /  

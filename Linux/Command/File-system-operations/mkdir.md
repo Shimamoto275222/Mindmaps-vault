@@ -9,4 +9,7 @@
 # create with permission  
 #mkdir -m 755 dir1  
 -m
+
+# print a message for each directory it creates.
+-v
 ```
