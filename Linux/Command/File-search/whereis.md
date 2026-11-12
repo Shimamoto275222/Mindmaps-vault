@@ -1,4 +1,4 @@
-Locate binary, source, manual page.
+	Locate binary, source, manual page.
 
 ```bash
 # whereis [options] name
