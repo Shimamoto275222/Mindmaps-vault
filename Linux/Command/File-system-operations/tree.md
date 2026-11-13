@@ -1,10 +1,9 @@
-
+Hiển thị cấu trúc thư mục dạng cây.
 
 ```bash
-# displays the directory structure in a tree-like format
+# tree [options] [dir]
+# không có dir → thư mục hiện tại
+# -p: hiện kèm permission đã set
 tree
-
-# including the permissions we set
--p
-
+tree -p /etc/nginx
 ```

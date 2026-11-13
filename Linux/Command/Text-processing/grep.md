@@ -1,3 +1,4 @@
+Tìm và in các dòng khớp pattern trong file (hoặc stdin).
 Cú pháp regex: xem [[Regex]]
 
 ```bash

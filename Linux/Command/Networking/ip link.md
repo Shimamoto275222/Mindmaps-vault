@@ -1,14 +1,16 @@
-# `ip link` — Interface ở tầng Link
-
-## Dùng để làm gì
-
 Xem và điều khiển các **network interface** của kernel ở tầng Link (tầng 2): tên interface, trạng thái bật/tắt, địa chỉ MAC, MTU, các cờ.
 
 `ip link` **không hiển thị địa chỉ IP** → muốn xem IP dùng `ip address`.
 
 Interface là khái niệm của kernel, không nhất thiết là card mạng thật: `lo` (loopback), `docker0` (bridge ảo), `veth...` (cặp interface ảo của container) đều là interface.
 
-## Các lệnh hay dùng
+```bash
+# ip [options] link show [dev IFACE]
+# ip link set IFACE {up | down | mtu N}
+ip -br link
+```
+
+## 1. Các lệnh hay dùng
 
 ```bash
 ip link show                 # liệt kê tất cả interface (dạng đầy đủ)
@@ -22,9 +24,9 @@ sudo ip link set eth0 down   # tắt interface (đừng làm với eth0 trên m�
 sudo ip link set eth0 mtu 1400
 ```
 
-## Đọc kết quả dạng gọn (`ip -br link`)
+## 2. Đọc kết quả dạng gọn (`ip -br link`)
 
-```
+```text
 lo        UNKNOWN   00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP>
 eth0      UP        00:16:3e:02:c3:dc <BROADCAST,MULTICAST,UP,LOWER_UP>
 docker0   DOWN      02:42:60:99:4a:96 <NO-CARRIER,BROADCAST,MULTICAST,UP>
@@ -37,9 +39,9 @@ docker0   DOWN      02:42:60:99:4a:96 <NO-CARRIER,BROADCAST,MULTICAST,UP>
 |3|Địa chỉ MAC|
 |4|Các cờ (flags)|
 
-## Đọc kết quả dạng đầy đủ (`ip link show`)
+## 3. Đọc kết quả dạng đầy đủ (`ip link show`)
 
-```
+```text
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
     link/ether 00:16:3e:02:c3:dc brd ff:ff:ff:ff:ff:ff
 ```
@@ -56,7 +58,7 @@ docker0   DOWN      02:42:60:99:4a:96 <NO-CARRIER,BROADCAST,MULTICAST,UP>
 |`link/ether`|Loại liên kết (Ethernet) và địa chỉ MAC|
 |`brd ff:ff:...`|Địa chỉ MAC broadcast|
 
-## ⭐ Các thông tin cần chú ý
+## 4. ⭐ Các thông tin cần chú ý
 
 ### 1. Trạng thái (`state`)
 
@@ -93,7 +95,7 @@ Ví dụ: `docker0` có `UP` nhưng `NO-CARRIER` và state `DOWN` → **không c
 - Thông thường là 1500. Nếu thấy giá trị lạ (1450, 9001...) thường do mạng ảo, VPN, hoặc jumbo frame.
 - MTU không khớp giữa hai đầu có thể gây lỗi khó hiểu: ping nhỏ được nhưng tải trang web bị treo.
 
-## Ghi nhớ
+## 5. Ghi nhớ
 
 - `ip link` = "card mạng có tồn tại không, có bật không, có cắm không".
 - Khi gỡ lỗi mạng, kiểm tra `ip link` **đầu tiên**, rồi mới tới `ip address` và `ip route`.

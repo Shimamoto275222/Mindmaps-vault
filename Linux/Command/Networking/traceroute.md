@@ -1,13 +1,13 @@
-
-# `traceroute` — Xem đường đi của gói tin
-
-## Dùng để làm gì
-
 Liệt kê **từng router (hop)** mà gói tin đi qua trên đường tới đích, kèm độ trễ tới mỗi hop.
 
 Dùng để trả lời: _"Gói tin bị nghẽn hoặc mất ở đâu trên đường đi?"_, điều mà `ping` không cho biết.
 
-## Nguyên lý hoạt động
+```bash
+# traceroute [options] DEST
+traceroute -n 8.8.8.8
+```
+
+## 1. Nguyên lý hoạt động
 
 traceroute lợi dụng trường **TTL** trong header IP:
 
@@ -19,7 +19,7 @@ Mỗi hop được thử **3 lần**, nên mỗi dòng có 3 giá trị thời g
 
 Trên Linux, traceroute mặc định gửi gói **UDP** tới port cao (33434+). Windows (`tracert`) dùng ICMP.
 
-## Cài đặt
+## 2. Cài đặt
 
 Nhiều hệ thống tối giản không có sẵn:
 
@@ -29,7 +29,7 @@ sudo apt install traceroute      # Debian/Ubuntu
 
 Lựa chọn thay thế thường có sẵn: `tracepath` (không cần root), `mtr` (traceroute + ping liên tục).
 
-## Các lệnh hay dùng
+## 3. Các lệnh hay dùng
 
 ```bash
 traceroute 8.8.8.8               # mặc định (UDP)
@@ -45,9 +45,9 @@ mtr -n 8.8.8.8                   # theo dõi liên tục, thống kê mất gói
 mtr -n -r -c 20 8.8.8.8          # chạy 20 lượt rồi in báo cáo
 ```
 
-## Đọc kết quả
+## 4. Đọc kết quả
 
-```
+```text
 traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets
  1  10.0.0.253  0.512 ms  0.480 ms  0.455 ms
  2  * * *
@@ -66,7 +66,7 @@ traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets
 |3 giá trị `ms`|Độ trễ đi và về của 3 lần thử|
 |`* * *`|Không nhận được phản hồi trong thời gian chờ|
 
-## ⭐ Các thông tin cần chú ý
+## 5. ⭐ Các thông tin cần chú ý
 
 ### 1. Hop đầu tiên = default gateway
 
@@ -98,7 +98,7 @@ Nếu hop 1 đã `* * *` mãi → vấn đề nằm ngay trong mạng nội bộ
 
 Đôi khi một hop hiện nhiều IP khác nhau trên cùng một dòng: gói được **cân bằng tải** qua nhiều đường song song. Không phải lỗi.
 
-## So sánh nhanh
+## 6. So sánh nhanh
 
 |Công cụ|Ưu điểm|
 |---|---|
@@ -106,7 +106,7 @@ Nếu hop 1 đã `* * *` mãi → vấn đề nằm ngay trong mạng nội bộ
 |`tracepath`|Không cần root, cho biết MTU trên đường đi|
 |`mtr`|Chạy liên tục, thống kê mất gói từng hop → tốt nhất để chẩn đoán mạng chập chờn|
 
-## Ghi nhớ
+## 7. Ghi nhớ
 
 - `traceroute` = "gói tin đi qua những đâu, chậm hoặc mất ở chặng nào".
 - Hop 1 là default gateway.

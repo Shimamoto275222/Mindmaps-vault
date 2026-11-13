@@ -1,10 +1,15 @@
+Chuyển sang user khác (switch user) ngay trong terminal hiện tại.
 
 ```bash
-#switch to user1  
+# su [-] [user]
+# không có user → chuyển sang root
+# - : login shell, nạp environment của user đích
+
+# chuyển sang user1
 su - user1
 
-# switch to admin
-# -i better due to autoload admin environment 
+# chuyển sang admin
+# sudo -i tốt hơn vì tự nạp environment của admin
 sudo -i
-sudo su 
+sudo su
 ```

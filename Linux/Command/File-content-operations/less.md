@@ -1,51 +1,50 @@
+Xem nội dung file theo từng trang (tốt hơn `more`: cuộn ngược được, tìm kiếm được, nhanh với file lớn).
 
 ```bash
 # less [file]
-# view file content page by page (better than `more`: scroll back, search, fast on big files)
 less /etc/passwd
 ls -l /usr/bin | less
+```
 
-# show line numbers
--N
+## 1. Các option chính
 
-# case-insensitive search
--i
-
-# don't wrap long lines (scroll left/right with arrows)
--S
-
-# open and jump to first match (also works with `more`)
+```bash
+# -N: hiện số dòng
+# -i: tìm kiếm không phân biệt hoa thường
+# -S: không wrap dòng dài (cuộn trái/phải bằng phím mũi tên)
+# +/pattern: mở file và nhảy tới match đầu tiên (dùng được cả với `more`)
 less +/ERROR large_log.txt
 ```
 
-## Navigation
-> Keys below are pressed **inside** less, not typed as command arguments.
+## 2. Phím điều hướng
+
+Các phím dưới đây bấm **bên trong** less, không phải gõ làm argument của lệnh.
 
 ```bash
-# --- Scroll ---
-Space / f / PgDn    # next page
-b / PgUp            # previous page
-d                   # half page down
-u                   # half page up
-j / ↓ / Enter       # next line
-k / ↑               # previous line
+# --- Cuộn ---
+Space / f / PgDn    # trang tiếp
+b / PgUp            # trang trước
+d                   # xuống nửa trang
+u                   # lên nửa trang
+j / ↓ / Enter       # dòng tiếp
+k / ↑               # dòng trước
 
-# --- Jump ---
-g / Home            # start of file
-G / End             # end of file
-50g                 # go to line 50
-50p                 # go to 50% of file
+# --- Nhảy ---
+g / Home            # đầu file
+G / End             # cuối file
+50g                 # tới dòng 50
+50p                 # tới vị trí 50% file
 
-# --- Search ---
-/pattern            # search forward
-?pattern            # search backward
-n                   # next match
-N                   # previous match
-&pattern            # show only lines matching pattern
+# --- Tìm kiếm ---
+/pattern            # tìm xuôi
+?pattern            # tìm ngược
+n                   # match tiếp theo
+N                   # match trước đó
+&pattern            # chỉ hiện các dòng match pattern
 
-# --- Other ---
-F                   # follow mode, like `tail -f` (Ctrl+C to stop)
-v                   # open file in $EDITOR
-h                   # help
-q                   # quit
+# --- Khác ---
+F                   # follow mode, giống `tail -f` (Ctrl+C để dừng)
+v                   # mở file bằng $EDITOR
+h                   # trợ giúp
+q                   # thoát
 ```

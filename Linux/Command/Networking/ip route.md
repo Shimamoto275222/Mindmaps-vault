@@ -1,8 +1,3 @@
-
-# `ip route` — Bảng định tuyến
-
-## Dùng để làm gì
-
 Xem và quản lý **bảng định tuyến** của kernel (tầng Internet / tầng 3). Bảng này quyết định: _gói tin tới một đích nào đó sẽ được gửi qua gateway nào, ra interface nào._
 
 Bảng định tuyến là của **kernel, dùng chung cho cả máy**, không nằm trong interface. Interface chỉ xuất hiện như đích đến của quyết định định tuyến (`dev eth0`).
@@ -11,7 +6,14 @@ Bảng định tuyến là của **kernel, dùng chung cho cả máy**, không n
 
 Viết tắt: `ip route` = `ip r`
 
-## Các lệnh hay dùng
+```bash
+# ip [options] route [show]
+# ip route get IP
+# ip route {add | del} DEST [via GATEWAY] [dev IFACE]
+ip route
+```
+
+## 1. Các lệnh hay dùng
 
 ```bash
 ip route show                # bảng định tuyến IPv4
@@ -25,11 +27,11 @@ sudo ip route add 192.168.100.0/24 via 10.0.0.5
 sudo ip route del 192.168.100.0/24
 ```
 
-Lưu ý: `-br` gần như không có tác dụng với `ip route`, output vẫn ở dạng đầy đủ.
+⚠️ `-br` gần như không có tác dụng với `ip route`, output vẫn ở dạng đầy đủ.
 
-## Ví dụ kết quả
+## 2. Ví dụ kết quả
 
-```
+```text
 default via 10.0.0.253 dev eth0 proto dhcp src 10.0.0.20 metric 100
 10.0.0.0/24 dev eth0 proto kernel scope link src 10.0.0.20 metric 100
 10.0.0.253 dev eth0 proto dhcp scope link src 10.0.0.20 metric 100
@@ -38,7 +40,7 @@ default via 10.0.0.253 dev eth0 proto dhcp src 10.0.0.20 metric 100
 172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown
 ```
 
-## Ý nghĩa các trường
+## 3. Ý nghĩa các trường
 
 |Trường|Ý nghĩa|
 |---|---|
@@ -61,11 +63,11 @@ default via 10.0.0.253 dev eth0 proto dhcp src 10.0.0.20 metric 100
 |`ra`|IPv6: học được từ Router Advertisement|
 |`boot`|Thêm thủ công bằng `ip route add` (mặc định)|
 
-## ⭐ Các thông tin cần chú ý
+## 4. ⭐ Các thông tin cần chú ý
 
 ### 1. Default route — quan trọng nhất
 
-```
+```text
 default via 10.0.0.253 dev eth0
 ```
 
@@ -102,7 +104,7 @@ Khi gửi gói tin tới `8.8.8.8`, kernel làm:
 2. Tra `ip neigh` → MAC của `10.0.0.253` là gì (chưa biết thì gửi ARP hỏi).
 3. Đóng frame: **MAC đích = MAC của gateway**, **IP đích vẫn là `8.8.8.8`**.
 
-```
+```text
 10.0.0.253 dev eth0 lladdr ee:ff:ff:ff:ff:ff REACHABLE
 ```
 
@@ -112,7 +114,7 @@ Khi gửi gói tin tới `8.8.8.8`, kernel làm:
 
 ### 6. IPv6 không có default route
 
-```
+```text
 ::1 dev lo proto kernel metric 256 pref medium
 fe80::/64 dev eth0 proto kernel metric 256 pref medium
 ```
@@ -121,13 +123,13 @@ fe80::/64 dev eth0 proto kernel metric 256 pref medium
 - Thường do mạng không cung cấp IPv6: không có Router Advertisement, máy chỉ có địa chỉ link-local `fe80::`.
 - Không phải lỗi cấu hình trên máy.
 
-## Lưu ý khi thực hành
+## 5. ⚠️ Lưu ý khi thực hành
 
 - Route thêm bằng `ip route add` là **tạm thời**, mất khi reboot hoặc bị trình quản lý mạng ghi đè.
 - **Không xóa default route trên máy remote**, bạn sẽ mất kết nối.
 - Gateway trên cloud có thể không trả lời ping; ping gateway thất bại chưa chắc là mạng hỏng, thử thêm `ping 8.8.8.8`.
 
-## Ghi nhớ
+## 6. Ghi nhớ
 
 - `ip route` = "gói tin sẽ được gửi đi đâu".
 - Nhìn đầu tiên: **có default route không, gateway là gì**.

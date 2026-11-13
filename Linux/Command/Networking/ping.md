@@ -1,8 +1,3 @@
-
-# `ping` — Kiểm tra kết nối tới một máy
-
-## Dùng để làm gì
-
 Gửi gói **ICMP Echo Request** tới một máy và chờ **Echo Reply**, để biết:
 
 - Máy đích có liên lạc được không.
@@ -11,7 +6,13 @@ Gửi gói **ICMP Echo Request** tới một máy và chờ **Echo Reply**, đ�
 
 ICMP thuộc **tầng Internet (tầng 3)**, không dùng TCP/UDP, không có port. → Ping được **không có nghĩa** một dịch vụ cụ thể (web, SSH...) đang hoạt động. → Ping không được **chưa chắc** máy đích chết: nhiều máy/firewall/gateway cloud chặn ICMP.
 
-## Các lệnh hay dùng
+```bash
+# ping [options] DEST
+# DEST: IP hoặc tên miền; không có -c → ping liên tục tới khi Ctrl+C
+ping -c 4 8.8.8.8
+```
+
+## 1. Các lệnh hay dùng
 
 ```bash
 ping 8.8.8.8                 # ping liên tục, dừng bằng Ctrl+C
@@ -26,9 +27,9 @@ ping -I eth0 8.8.8.8         # gửi ra một interface cụ thể
 ping -M do -s 1472 8.8.8.8   # cấm phân mảnh, dùng để dò MTU
 ```
 
-## Đọc kết quả
+## 2. Đọc kết quả
 
-```
+```text
 PING 10.0.0.150 (10.0.0.150) 56(84) bytes of data.
 64 bytes from 10.0.0.150: icmp_seq=1 ttl=64 time=0.036 ms
 64 bytes from 10.0.0.150: icmp_seq=2 ttl=64 time=0.033 ms
@@ -65,7 +66,7 @@ rtt min/avg/max/mdev = 0.033/0.034/0.036/0.001 ms
 |`min/avg/max`|Độ trễ nhỏ nhất / trung bình / lớn nhất|
 |`mdev`|Độ dao động của độ trễ (jitter). Càng nhỏ càng ổn định|
 
-## ⭐ Các thông tin cần chú ý
+## 3. ⭐ Các thông tin cần chú ý
 
 ### 1. Độ trễ (`time`) — đoán khoảng cách
 
@@ -121,7 +122,7 @@ ping -c 2 google.com       # 5. Internet bằng tên → kiểm tra DNS
 - Bước 4 được mà bước 5 không → lỗi DNS.
 - Gateway trên cloud có thể không trả lời ping; nếu bước 3 thất bại mà bước 4 vẫn được thì mạng vẫn ổn.
 
-## Ghi nhớ
+## 4. Ghi nhớ
 
 - `ping` = "có tới được không, mất bao lâu".
 - Nhìn 3 thứ: **có phản hồi không**, **time**, **packet loss**.

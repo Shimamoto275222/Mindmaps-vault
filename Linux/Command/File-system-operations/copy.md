@@ -1,13 +1,12 @@
-
+Copy file / thư mục (lệnh `cp`).
 
 ```bash
-#  Copy only when the source file is newer than the destination file or when the destination file is missing
--u
-
-# Copy recursive dir
--r
-
-# Verbose mode, explaining what is being done
--v 
-  
+# cp [options] source dest
+# cp [options] source... dir    (nhiều nguồn → đích phải là thư mục)
+# -u: chỉ copy khi file nguồn mới hơn file đích, hoặc file đích chưa tồn tại
+# -r: copy thư mục đệ quy
+# -v: verbose, giải thích đang làm gì
+cp file.txt backup.txt
+cp -r src/ /tmp/src_backup
+cp -uv *.md /backup/
 ```

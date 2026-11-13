@@ -1,7 +1,4 @@
-
-# Case debug: "Website không truy cập được"
-
-Một tình huống rất thường gặp khi quản trị server Linux, kết hợp các lệnh đã học: `systemctl`, `journalctl`, `ss`, `ip`, `ping`.
+Case debug "Website không truy cập được": một tình huống rất thường gặp khi quản trị server Linux, kết hợp các lệnh đã học: `systemctl`, `journalctl`, `ss`, `ip`, `ping`.
 
 > Output trong case này là ví dụ minh họa. Khi tự thực hành, chi tiết (PID, thời gian, IP) sẽ khác.
 
@@ -165,7 +162,7 @@ Cùng quy trình trên, nhưng nguyên nhân khác:
 
 ## Tóm tắt quy trình
 
-```
+```text
 curl lỗi
  └─ ip addr / ip route / ping   → mạng ổn?
      └─ systemctl status        → dịch vụ chạy không? enabled không?

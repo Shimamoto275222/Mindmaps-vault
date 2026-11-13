@@ -1,3 +1,5 @@
+Điều hướng input / output của lệnh: ghi ra file, đọc từ file, ẩn lỗi, nối lệnh bằng pipe.
+
 ## 1. File descriptor (fd)
 
 | fd  | Tên    | Mặc định trỏ tới |

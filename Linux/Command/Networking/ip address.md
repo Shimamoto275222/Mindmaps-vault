@@ -1,15 +1,16 @@
-
-# `ip address` — Địa chỉ IP trên interface
-
-## Dùng để làm gì
-
 Xem và quản lý **địa chỉ IP** (tầng Internet / tầng 3) được gán lên các interface.
 
 Kết quả gồm mọi thông tin của `ip link` **cộng thêm** địa chỉ IPv4/IPv6. Đây là lệnh dùng nhiều nhất để trả lời câu hỏi: _"Máy tôi đang có IP gì?"_
 
 Viết tắt: `ip address` = `ip addr` = `ip a`
 
-## Các lệnh hay dùng
+```bash
+# ip [options] address show [dev IFACE]
+# ip address {add | del} IP/PREFIX dev IFACE
+ip -br addr
+```
+
+## 1. Các lệnh hay dùng
 
 ```bash
 ip address show              # tất cả interface, dạng đầy đủ
@@ -23,9 +24,9 @@ sudo ip addr add 192.168.50.10/24 dev eth1   # thêm địa chỉ
 sudo ip addr del 192.168.50.10/24 dev eth1   # xóa địa chỉ
 ```
 
-## Đọc kết quả dạng gọn (`ip -br addr`)
+## 2. Đọc kết quả dạng gọn (`ip -br addr`)
 
-```
+```text
 lo        UNKNOWN   127.0.0.1/8 ::1/128
 eth0      UP        10.0.0.123/24 metric 100 fe80::216:3eff:fe02:c3dc/64
 docker0   DOWN      172.17.0.1/16
@@ -37,9 +38,9 @@ docker0   DOWN      172.17.0.1/16
 |2|Trạng thái|
 |3+|Các địa chỉ IPv4 và IPv6, kèm prefix (`/24`, `/64`)|
 
-## Đọc kết quả dạng đầy đủ (`ip addr show`)
+## 3. Đọc kết quả dạng đầy đủ (`ip addr show`)
 
-```
+```text
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
     link/ether 00:16:3e:02:c3:dc brd ff:ff:ff:ff:ff:ff
     inet 10.0.0.123/24 brd 10.0.0.255 scope global dynamic eth0
@@ -61,7 +62,7 @@ Hai dòng đầu giống `ip link`. Phần mới:
 |`valid_lft`|Thời gian còn hiệu lực của địa chỉ|
 |`preferred_lft`|Thời gian địa chỉ còn được ưu tiên dùng làm nguồn|
 
-## ⭐ Các thông tin cần chú ý
+## 4. ⭐ Các thông tin cần chú ý
 
 ### 1. Địa chỉ IP và prefix
 
@@ -103,7 +104,7 @@ Mẹo: nếu `ip -6 addr` chỉ có địa chỉ `scope link` mà không có `sc
 
 Một interface có thể vừa có IPv4 vừa có IPv6, hoặc có nhiều IPv4 cùng lúc. Mỗi địa chỉ là một dòng `inet` / `inet6` riêng.
 
-## Ghi nhớ
+## 5. Ghi nhớ
 
 - `ip address` = "interface đang mang địa chỉ IP gì".
 - Nhìn 3 thứ: **địa chỉ + prefix**, **scope**, **dynamic hay tĩnh**.

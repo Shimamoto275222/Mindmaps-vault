@@ -1,15 +1,15 @@
-
-# `systemctl` — Quản lý dịch vụ với systemd
-
-## Dùng để làm gì
-
 `systemctl` là công cụ điều khiển **systemd**, chương trình đầu tiên chạy khi Linux khởi động (PID 1) và quản lý mọi dịch vụ trên máy.
 
 Dùng để: bật/tắt/khởi động lại dịch vụ, cho dịch vụ tự chạy khi boot, xem trạng thái và lỗi của dịch vụ.
 
-Lưu ý: chỉ có trên hệ thống dùng systemd (Ubuntu, Debian, Fedora, RHEL, Arch...). **Không chạy trong container Docker thông thường** (không có systemd), và trên WSL cần bật systemd trong `/etc/wsl.conf`.
+⚠️ Chỉ có trên hệ thống dùng systemd (Ubuntu, Debian, Fedora, RHEL, Arch...). **Không chạy trong container Docker thông thường** (không có systemd), và trên WSL cần bật systemd trong `/etc/wsl.conf`.
 
-## Khái niệm: Unit
+```bash
+# systemctl [options] COMMAND [UNIT...]
+systemctl status nginx
+```
+
+## 1. Khái niệm: Unit
 
 systemd quản lý mọi thứ dưới dạng **unit**. Tên unit có đuôi cho biết loại:
 
@@ -23,7 +23,7 @@ systemd quản lý mọi thứ dưới dạng **unit**. Tên unit có đuôi cho
 
 Với `.service` có thể bỏ đuôi: `systemctl status nginx` = `systemctl status nginx.service`.
 
-## Các lệnh hay dùng
+## 2. Các lệnh hay dùng
 
 ### Điều khiển dịch vụ (có hiệu lực ngay)
 
@@ -67,9 +67,9 @@ sudo systemctl daemon-reload         # ⭐ bắt buộc sau khi sửa unit file 
 systemctl list-dependencies nginx    # unit này phụ thuộc những gì
 ```
 
-## Đọc kết quả `systemctl status`
+## 3. Đọc kết quả `systemctl status`
 
-```
+```text
 ● nginx.service - A high performance web server and a reverse proxy server
      Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
      Active: active (running) since Thu 2026-11-05 09:12:31 UTC; 2h 5min ago
@@ -99,11 +99,11 @@ Nov 05 09:12:31 labex systemd[1]: Started A high performance web server...
 |`CGroup:`|Cây tiến trình thuộc dịch vụ|
 |Các dòng cuối|**Log gần nhất** (lấy từ journal)|
 
-## ⭐ Các thông tin cần chú ý
+## 4. ⭐ Các thông tin cần chú ý
 
 ### 1. `enabled` và `active` là hai việc khác nhau
 
-|Nghĩa|Lệnh thay đổi|
+|Trạng thái|Nghĩa|Lệnh thay đổi|
 |---|---|---|
 |**enabled** / disabled|Có **tự chạy khi boot** hay không|`enable` / `disable`|
 |**active** / inactive|**Đang chạy ngay lúc này** hay không|`start` / `stop`|
@@ -131,7 +131,7 @@ Các giá trị khác của dòng `Loaded:`:
 
 ### 3. Mã thoát khi lỗi
 
-```
+```text
 Active: failed (Result: exit-code) since ...
 Process: 2101 ExecStart=/usr/sbin/nginx (code=exited, status=1/FAILURE)
 ```
@@ -155,7 +155,7 @@ systemctl status nginx -l --no-pager   # không cắt dòng
 journalctl -u nginx -e                 # xem toàn bộ log của dịch vụ
 ```
 
-## Cấu trúc unit file (cơ bản)
+## 5. Cấu trúc unit file (cơ bản)
 
 ```ini
 [Unit]
@@ -179,7 +179,7 @@ Vị trí unit file:
 
 Sửa xong luôn chạy: `sudo systemctl daemon-reload` rồi `restart`.
 
-## Ghi nhớ
+## 6. Ghi nhớ
 
 - `systemctl` = "dịch vụ có chạy không, có tự chạy khi boot không, và điều khiển nó".
 - Lệnh đầu tiên khi dịch vụ có vấn đề: `systemctl status <tên>`.

@@ -1,20 +1,21 @@
-
-# `journalctl` — Đọc log hệ thống của systemd
-
-## Dùng để làm gì
-
 systemd thu thập log từ kernel, từ mọi dịch vụ và từ quá trình khởi động vào một nơi gọi là **journal**. `journalctl` là công cụ để đọc và lọc journal đó.
 
 Dùng để trả lời: _"Vì sao dịch vụ này lỗi?"_, _"Lúc máy boot đã xảy ra gì?"_, _"Trong 10 phút qua có lỗi gì?"_
 
 Khác với file log văn bản truyền thống trong `/var/log/`, journal lưu ở dạng nhị phân có cấu trúc, nên lọc theo dịch vụ, thời gian, mức độ rất dễ.
 
-## Quyền đọc log
+```bash
+# journalctl [options] [FIELD=value...]
+# không option → toàn bộ journal, cũ nhất trước
+journalctl -u nginx -e
+```
+
+## 1. Quyền đọc log
 
 - Người dùng thường chỉ thấy log của chính mình.
 - Muốn thấy log hệ thống: dùng `sudo`, hoặc thêm user vào nhóm `adm` / `systemd-journal`.
 
-## Các lệnh hay dùng
+## 2. Các lệnh hay dùng
 
 ### Theo dịch vụ
 
@@ -67,7 +68,7 @@ sudo journalctl --vacuum-time=7d # xóa log cũ hơn 7 ngày
 
 Các bộ lọc **kết hợp được với nhau**: `journalctl -u nginx -p err --since "1 hour ago"`.
 
-## Trình xem mặc định
+## 3. Trình xem mặc định
 
 Khi không có `-f` hay `--no-pager`, journalctl mở log trong trình xem `less`:
 
@@ -79,9 +80,9 @@ Khi không có `-f` hay `--no-pager`, journalctl mở log trong trình xem `less
 |`→` / `←`|Cuộn ngang (dòng dài bị cắt)|
 |`q`|Thoát|
 
-## Đọc kết quả
+## 4. Đọc kết quả
 
-```
+```text
 Nov 05 09:12:31 labex systemd[1]: Starting A high performance web server...
 Nov 05 09:12:31 labex nginx[2101]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
 Nov 05 09:12:33 labex systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
@@ -96,7 +97,7 @@ Nov 05 09:12:33 labex systemd[1]: Failed to start A high performance web server.
 |`systemd[1]` / `nginx[2101]`|**Ai ghi log** và PID của nó|
 |Phần còn lại|Nội dung thông điệp|
 
-## ⭐ Các thông tin cần chú ý
+## 5. ⭐ Các thông tin cần chú ý
 
 ### 1. Phân biệt log của systemd và log của chính chương trình
 
@@ -122,7 +123,7 @@ Trong ví dụ trên:
 
 `-p err` hiện mức 3 trở xuống (0–3). Khi xem trong terminal, lỗi thường được tô đỏ, cảnh báo tô vàng/đậm.
 
-Lưu ý: không phải chương trình nào cũng gắn đúng mức độ. Một số chương trình ghi mọi thứ ở mức `info`, nên lọc bằng `-p err` có thể bỏ sót lỗi thật. Khi nghi ngờ, xem log đầy đủ của dịch vụ.
+⚠️ Không phải chương trình nào cũng gắn đúng mức độ. Một số chương trình ghi mọi thứ ở mức `info`, nên lọc bằng `-p err` có thể bỏ sót lỗi thật. Khi nghi ngờ, xem log đầy đủ của dịch vụ.
 
 ### 3. Từ khóa nên tìm trong log
 
@@ -148,7 +149,7 @@ sudo systemctl restart systemd-journald
 
 Một số chương trình vẫn tự ghi file riêng, ví dụ nginx ghi lỗi chi tiết vào `/var/log/nginx/error.log`, Apache vào `/var/log/apache2/`. Nếu journal không đủ thông tin, kiểm tra thêm `/var/log/<tên dịch vụ>/`.
 
-## Ghi nhớ
+## 6. Ghi nhớ
 
 - `journalctl` = "chuyện gì đã xảy ra" (log), còn `systemctl status` = "tình trạng hiện tại" (trạng thái).
 - Ba lệnh dùng nhiều nhất: `journalctl -u <tên> -e`, `journalctl -u <tên> -f`, `journalctl -p err -b`.

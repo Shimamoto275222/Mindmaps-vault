@@ -1,19 +1,20 @@
+Chuyển thư mục làm việc hiện tại.
 
 ```bash
-#cd [directory]  
-  
-# go home dir = $HOME  
-cd ~  
-  
-# go parent dir  
-cd ..  
-  
-# go previous dir  
-cd - 
-  
-# go root  
-cd /  
-  
-# sibling dir2 of dir1  
+# cd [directory]
+
+# về home dir (= $HOME)
+cd ~
+
+# về thư mục cha
+cd ..
+
+# về thư mục trước đó
+cd -
+
+# về thư mục root
+cd /
+
+# sang dir2 (sibling của dir1)
 cd ../dir2
 ```

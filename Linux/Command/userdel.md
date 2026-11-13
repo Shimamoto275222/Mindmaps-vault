@@ -1,9 +1,8 @@
+Xoá user.
 
 ```bash
-
-#delete user  
-sudo userdel user1  
-# delete home dir & mail spool  
--r
-
+# sudo userdel [options] user
+# -r: xoá cả home dir và mail spool
+sudo userdel user1
+sudo userdel -r user1
 ```

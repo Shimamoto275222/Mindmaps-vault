@@ -1,5 +1,6 @@
+Mở shell mới, dùng `grp_name` làm primary group.
 
 ```bash
-# start a new shell use "grp_name" as the primary group  
+# newgrp [group]
 newgrp "grp_name"
 ```

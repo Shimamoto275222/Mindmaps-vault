@@ -1,8 +1,3 @@
-
-# `ss` — Xem socket và kết nối mạng
-
-## Dùng để làm gì
-
 Liệt kê các **socket** trên máy: dịch vụ nào đang **lắng nghe** (listen) trên port nào, những **kết nối** nào đang mở, tới đâu.
 
 `ss` làm việc ở **tầng Transport (TCP/UDP)**: nơi có port, khác với `ip` (tầng Link/Internet) và `ping` (ICMP).
@@ -11,20 +6,25 @@ Dùng để trả lời: _"Dịch vụ web/SSH có đang chạy và nghe đúng 
 
 `ss` là bản thay thế hiện đại của `netstat` (gói `net-tools`, đã cũ), nhanh hơn và thường có sẵn trong gói `iproute2` cùng với `ip`.
 
-## Các tùy chọn cơ bản
+```bash
+# ss [options] [state STATE] [filter]
+sudo ss -tulpn
+```
 
-| Tùy chọn    | Ý nghĩa                                                              |
-| ----------- | -------------------------------------------------------------------- |
-| `-t`        | TCP                                                                  |
-| `-u`        | UDP                                                                  |
-| `-l`        | Chỉ socket đang **lắng nghe**                                        |
-| `-a`        | Tất cả (cả lắng nghe lẫn đã kết nối)                                 |
-| `-n`        | Hiện số (IP, port), không đổi sang tên → nhanh và rõ                 |
-| `-p`        | Hiện **tiến trình** sở hữu socket (cần `sudo` để thấy của user khác) |
-| `-4` / `-6` | Chỉ IPv4 / IPv6                                                      |
-| `-s`        | Thống kê tổng hợp                                                    |
+## 1. Các tùy chọn cơ bản
 
-## Các lệnh hay dùng
+```bash
+# -t     : TCP
+# -u     : UDP
+# -l     : chỉ socket đang lắng nghe
+# -a     : tất cả (cả lắng nghe lẫn đã kết nối)
+# -n     : hiện số (IP, port), không đổi sang tên → nhanh và rõ
+# -p     : hiện tiến trình sở hữu socket (cần sudo để thấy của user khác)
+# -4 / -6: chỉ IPv4 / IPv6
+# -s     : thống kê tổng hợp
+```
+
+## 2. Các lệnh hay dùng
 
 ```bash
 sudo ss -tulpn               # ⭐ lệnh quan trọng nhất: dịch vụ nào nghe port nào
@@ -39,9 +39,9 @@ ss -tn '( dport = :443 )'    # kết nối ra port 443
 
 Mẹo nhớ `-tulpn`: **t**cp, **u**dp, **l**isten, **p**rocess, **n**umeric.
 
-## Đọc kết quả `sudo ss -tulpn`
+## 3. Đọc kết quả `sudo ss -tulpn`
 
-```
+```text
 Netid State  Recv-Q Send-Q  Local Address:Port  Peer Address:Port Process
 udp   UNCONN 0      0       127.0.0.53%lo:53         0.0.0.0:*     users:(("systemd-resolve",pid=512,fd=13))
 udp   UNCONN 0      0      10.0.0.20%eth0:68         0.0.0.0:*     users:(("systemd-network",pid=480,fd=19))
@@ -60,7 +60,7 @@ tcp   LISTEN 0      128              [::]:22            [::]:*     users:(("sshd
 |`Peer Address:Port`|Địa chỉ và port **phía bên kia**. `*` = chưa có ai (đang chờ)|
 |`Process`|Tên chương trình, PID, file descriptor|
 
-## ⭐ Các thông tin cần chú ý
+## 4. ⭐ Các thông tin cần chú ý
 
 ### 1. Địa chỉ đang lắng nghe — ai kết nối vào được?
 
@@ -123,9 +123,9 @@ sudo ss -tlnp 'sport = :8080'
 |3306 / 5432|MySQL / PostgreSQL|
 |6379|Redis|
 
-## Đọc kết nối đang hoạt động (`ss -tn`)
+## 5. Đọc kết nối đang hoạt động (`ss -tn`)
 
-```
+```text
 State  Recv-Q Send-Q   Local Address:Port    Peer Address:Port
 ESTAB  0      0            10.0.0.20:22      100.104.12.7:51432
 ESTAB  0      0            10.0.0.20:41822   142.250.66.78:443
@@ -136,7 +136,7 @@ ESTAB  0      0            10.0.0.20:41822   142.250.66.78:443
 
 Quy tắc: bên nào dùng **port dịch vụ cố định** là server, bên dùng **port cao ngẫu nhiên** (32768–60999) là client.
 
-## Ghi nhớ
+## 6. Ghi nhớ
 
 - `ss` = "dịch vụ nào đang nghe, kết nối nào đang mở" (tầng Transport, có port).
 - Lệnh cần nhớ: `sudo ss -tulpn`.

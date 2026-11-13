@@ -1,10 +1,11 @@
+Đổi password của user, cập nhật password trong file `/etc/shadow`.
 
 ```bash
-# change user pw  
-# updates users'pw in /etc/shadow file  
-sudo passwd user1  
-# lock user  
--l  
-# unlock user  
--u 
+# passwd [options] [user]
+# không có user → đổi password của chính mình
+# -l: khoá user
+# -u: mở khoá user
+sudo passwd user1
+sudo passwd -l user1
+sudo passwd -u user1
 ```
